@@ -3,27 +3,27 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Shah Md. Mahtabuzzaman, Data Engineer</title>
-<meta name="description" content="Data engineer in Dhaka building governed data platforms on Microsoft Fabric, from source systems to Power BI and AI.">
+<title>Shah Md. Mahtabuzzaman, Data and Analytics Engineer</title>
+<meta name="description" content="Data and analytics engineer in Dhaka. Data platforms on Microsoft Fabric and Azure, Power BI analytics, DevOps and Microsoft security.">
 <meta name="author" content="Shah Md. Mahtabuzzaman">
 
-<!-- Before publishing: find and replace "mahtabuzzaman" with your GitHub username (Replace All). -->
 <link rel="canonical" href="https://mahtabuzzaman.github.io/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Shah Md. Mahtabuzzaman">
-<meta property="og:title" content="Shah Md. Mahtabuzzaman, Data Engineer">
-<meta property="og:description" content="I build governed data platforms on Microsoft Fabric, turning scattered business systems into one trusted model for reporting and AI.">
+<meta property="og:title" content="Shah Md. Mahtabuzzaman, Data and Analytics Engineer">
+<meta property="og:description" content="I build data platforms on Microsoft Fabric and Azure, turn them into analytics people trust, and keep them secure.">
 <meta property="og:url" content="https://mahtabuzzaman.github.io/">
 <meta property="og:image" content="https://mahtabuzzaman.github.io/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Shah Md. Mahtabuzzaman, data engineer in Dhaka, with a diagram of data moving from sources through bronze, silver and gold layers.">
+<meta property="og:image:alt" content="Shah Md. Mahtabuzzaman, data and analytics engineer in Dhaka, with a diagram of data moving from sources through bronze, silver and gold layers.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#F4F6F8">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23142230'/%3E%3Crect x='7' y='8' width='18' height='4' rx='2' fill='%23D2884F'/%3E%3Crect x='7' y='14' width='18' height='4' rx='2' fill='%23AFBBC7'/%3E%3Crect x='7' y='20' width='18' height='4' rx='2' fill='%23E3BD48'/%3E%3C/svg%3E">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap">
 
 <script>
@@ -39,11 +39,11 @@
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Shah Md. Mahtabuzzaman",
-  "jobTitle": "Data Engineer",
+  "jobTitle": "Data and Analytics Engineer",
   "url": "https://mahtabuzzaman.github.io/",
   "address": { "@type": "PostalAddress", "addressLocality": "Dhaka", "addressCountry": "BD" },
-  "alumniOf": { "@type": "CollegeOrUniversity", "name": "Ahsanullah University of Science and Technology" },
-  "knowsAbout": ["Microsoft Fabric", "Data engineering", "Analytics engineering", "dbt", "Power BI", "Azure DevOps", "Microsoft Entra ID"],
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "Ahsanullah University of Science and Technology", "url": "https://www.aust.edu" },
+  "knowsAbout": ["Microsoft Fabric", "Power BI", "Microsoft Azure", "Azure DevOps", "Microsoft Entra ID", "dbt", "Python", "SQL", "Data engineering", "Analytics engineering", "Cloud security"],
   "sameAs": ["https://www.linkedin.com/in/mahtabuzzaman"]
 }
 </script>
@@ -55,6 +55,8 @@
     --ink: #142230;
     --ink-2: #52616F;
     --line: #D6DDE4;
+    --tile: #FFFFFF;
+    --tile-line: #D6DDE4;
     --raw: #8A8279;
     --bronze: #A8622E;
     --silver: #7E8FA0;
@@ -69,6 +71,8 @@
       --ink: #E5EBF1;
       --ink-2: #9DABB9;
       --line: #253442;
+      --tile: #EDF1F5;
+      --tile-line: #EDF1F5;
       --raw: #948C83;
       --bronze: #D2884F;
       --silver: #AFBBC7;
@@ -76,6 +80,7 @@
       --focus: #E3BD48;
       color-scheme: dark;
     }
+    :root:not([data-theme="light"]) .invert-dark { filter: invert(1); }
   }
   :root[data-theme="dark"] {
     --paper: #0E1620;
@@ -83,6 +88,8 @@
     --ink: #E5EBF1;
     --ink-2: #9DABB9;
     --line: #253442;
+    --tile: #EDF1F5;
+    --tile-line: #EDF1F5;
     --raw: #948C83;
     --bronze: #D2884F;
     --silver: #AFBBC7;
@@ -90,6 +97,7 @@
     --focus: #E3BD48;
     color-scheme: dark;
   }
+  :root[data-theme="dark"] .invert-dark { filter: invert(1); }
 
   *, *::before, *::after { box-sizing: border-box; }
   html { -webkit-text-size-adjust: 100%; scroll-padding-top: 5rem; }
@@ -104,11 +112,17 @@
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
   }
-  h1, h2, h3, p, dl, dd { margin: 0; }
+  h1, h2, h3, h4, p, dl, dd { margin: 0; }
   h1, h2, h3 { text-wrap: balance; }
   a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.2em; }
   :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 6px; }
+  [hidden] { display: none !important; }
   .no-js .js-only { display: none; }
+  .visually-hidden {
+    position: absolute !important; width: 1px; height: 1px; overflow: hidden;
+    clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap;
+  }
+  .ico { width: 1.25rem; height: 1.25rem; flex: none; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 
   .wrap { width: min(100% - 2.5rem, 70rem); margin-inline: auto; }
   .skip {
@@ -117,6 +131,18 @@
     padding: 0.6rem 1rem; border-radius: 8px; text-decoration: none;
   }
   .skip:focus { top: 1rem; }
+
+  /* Logos: official files, shown on a light tile so dark marks stay visible in dark mode */
+  .logo {
+    position: relative; flex: none;
+    display: inline-grid; place-items: center;
+    width: 1.85rem; height: 1.85rem; border-radius: 50%;
+    background: var(--tile);
+  }
+  .logo img { display: block; width: 1.15rem; height: 1.15rem; object-fit: contain; }
+  .logo-fallback { display: none; font-size: 0.7rem; font-weight: 760; font-stretch: 110%; color: #142230; letter-spacing: 0.02em; }
+  .logo.is-missing img { display: none; }
+  .logo.is-missing .logo-fallback { display: block; }
 
   /* Header */
   .site-head {
@@ -131,11 +157,8 @@
   .site-head.is-scrolled { border-bottom-color: var(--line); }
   .site-head .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; height: 4rem; }
   .brand { font-weight: 760; font-stretch: 116%; font-size: 1.05rem; text-decoration: none; letter-spacing: -0.005em; }
-  .nav { display: flex; align-items: center; gap: 0.15rem; }
-  .nav a {
-    padding: 0.5rem 0.75rem; border-radius: 999px;
-    color: var(--ink-2); font-weight: 520; text-decoration: none;
-  }
+  .nav { display: flex; align-items: center; gap: 0.1rem; }
+  .nav a { padding: 0.5rem 0.7rem; border-radius: 999px; color: var(--ink-2); font-weight: 520; text-decoration: none; }
   .theme-btn {
     display: inline-grid; place-items: center;
     width: 2.75rem; height: 2.75rem; margin-left: 0.35rem;
@@ -146,13 +169,13 @@
   .theme-btn .i-sun { display: none; }
   .theme-btn[data-mode="dark"] .i-sun { display: block; }
   .theme-btn[data-mode="dark"] .i-moon { display: none; }
-  @media (max-width: 640px) { .nav .nav-extra { display: none; } }
+  @media (max-width: 760px) { .nav .nav-extra { display: none; } }
   @media (max-width: 400px) { .brand { font-stretch: 100%; } .nav a { padding-inline: 0.55rem; } }
 
   /* Buttons */
   .actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }
   .btn {
-    display: inline-flex; align-items: center; justify-content: center;
+    display: inline-flex; align-items: center; justify-content: center; gap: 0.55rem;
     min-height: 2.875rem; padding: 0.65rem 1.25rem;
     border: 1.5px solid var(--ink); border-radius: 999px;
     background: transparent; color: var(--ink);
@@ -161,6 +184,7 @@
     transition: background-color 0.15s, color 0.15s;
   }
   .btn-primary { background: var(--ink); color: var(--paper); }
+  .btn-logo { width: 1.1rem; height: 1.1rem; }
 
   /* Hero */
   .hero { padding-block: clamp(3.5rem, 8vw, 6.5rem) clamp(4rem, 8vw, 6rem); }
@@ -170,22 +194,63 @@
     line-height: 1.02; letter-spacing: -0.02em;
   }
   .lead {
-    margin-top: 1.4rem; max-width: 44ch;
+    margin-top: 1.4rem; max-width: 46ch;
     font-size: clamp(1.15rem, 1rem + 0.6vw, 1.4rem); line-height: 1.5;
     color: var(--ink-2);
   }
   .hero .actions { margin-top: 2rem; }
 
-  /* The pipeline */
-  .flow {
+  /* What I do: one panel, six areas */
+  .what {
     margin-top: clamp(3rem, 6vw, 4.5rem);
     background: var(--panel);
     border: 1px solid var(--line);
     border-radius: 20px;
     padding: clamp(1.25rem, 3vw, 2.25rem);
   }
-  .flow-title { font-size: 1.2rem; font-weight: 720; font-stretch: 112%; }
-  .flow-map { position: relative; margin-top: 1.75rem; }
+  .what-title { font-size: 1.2rem; font-weight: 720; font-stretch: 112%; }
+  .tabs { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 0.5rem; margin-top: 1.1rem; }
+  .tab {
+    -webkit-appearance: none; appearance: none;
+    display: flex; flex-direction: column; align-items: flex-start; gap: 0.6rem;
+    min-height: 2.75rem; padding: 0.85rem 0.9rem;
+    border: 1.5px solid var(--line); border-radius: 14px;
+    background: none; color: var(--ink);
+    font: inherit; font-size: 0.95rem; font-weight: 620; line-height: 1.2; text-align: left;
+    cursor: pointer; transition: background-color 0.15s, border-color 0.15s, color 0.15s;
+  }
+  .tab .ico { color: var(--ink-2); }
+  .tab[aria-selected="true"] { background: var(--ink); border-color: var(--ink); color: var(--panel); }
+  .tab[aria-selected="true"] .ico { color: var(--panel); }
+
+  .panel { margin-top: 1.75rem; }
+  .js .panel:not(.is-on) { display: none; }
+  .js .panel.is-on { animation: fade-in 0.25s ease; }
+  .no-js .panel + .panel { margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--line); }
+  .panel-title { font-size: 1.3rem; font-weight: 740; font-stretch: 110%; }
+  .js .panel-title { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; }
+  .panel-summary { max-width: 60ch; font-size: 1.15rem; line-height: 1.5; }
+  .panel-grid { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 1.75rem 3rem; margin-top: 1.25rem; }
+  .points { list-style: none; margin: 0; padding: 0; }
+  .points li { position: relative; padding-left: 1.15rem; }
+  .points li + li { margin-top: 0.45rem; }
+  .points li::before { content: ""; position: absolute; left: 0; top: 0.68em; width: 6px; height: 6px; border-radius: 50%; background: var(--ink-2); }
+  .practice { margin-top: 1.1rem; padding-top: 0.9rem; border-top: 1px dashed var(--line); color: var(--ink-2); max-width: 60ch; }
+  .practice:first-child { margin-top: 0; padding-top: 0; border-top: 0; }
+  .practice strong { color: var(--ink); }
+  .tools-title { font-size: 0.95rem; font-weight: 650; color: var(--ink-2); }
+  .chips { list-style: none; margin: 0.7rem 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .chip {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    min-height: 2.45rem; padding: 0.3rem 0.85rem 0.3rem 0.3rem;
+    border: 1px solid var(--line); border-radius: 999px;
+    font-size: 0.92rem; font-weight: 560; line-height: 1.2;
+  }
+  .chip-text, .chip:has(.logo.is-missing) { padding-left: 0.85rem; }
+  .chip .logo.is-missing { display: none; }
+
+  /* The medallion pipeline inside "Data engineering" */
+  .flow-map { position: relative; margin-top: 1.5rem; }
   .stages {
     position: relative; z-index: 1;
     list-style: none; margin: 0; padding: 0;
@@ -216,6 +281,7 @@
     text-decoration: underline; text-decoration-thickness: 2px;
     text-underline-offset: 0.35em; text-decoration-color: var(--c);
   }
+  .stage-caption { min-height: 3.2em; margin-top: 0.5rem; padding: 0.8rem 1rem; border-radius: 12px; background: var(--paper); color: var(--ink-2); font-size: 0.95rem; }
 
   .track-clip { position: absolute; inset: -1.5rem 0; z-index: 0; overflow: hidden; pointer-events: none; }
   .track { position: absolute; left: 10%; right: 10%; top: calc(1.5rem + 0.5rem + 10px); height: 0; }
@@ -223,10 +289,7 @@
     content: ""; position: absolute; left: 0; right: 0; top: -1px; height: 2px;
     background: var(--line); transform-origin: left center;
   }
-  .packet {
-    position: absolute; inset: 0;
-    animation: travel var(--dur, 7.5s) linear var(--d, 0s) infinite backwards;
-  }
+  .packet { position: absolute; inset: 0; animation: travel var(--dur, 7.5s) linear var(--d, 0s) infinite backwards; }
   .packet i {
     position: absolute; left: 0; top: 0;
     width: 10px; height: 10px; border-radius: 50%;
@@ -243,57 +306,15 @@
     95%  { opacity: 1; }
     100% { opacity: 0; transform: translate(-50%, -50%) scale(1); background: var(--gold); }
   }
-
   /* One orchestrated moment on load: nodes appear left to right, the line draws, data starts flowing. */
-  .js .flow:not(.is-live) .node { opacity: 0; }
-  .js .flow:not(.is-live) .track::before { transform: scaleX(0); }
-  .js .flow:not(.is-live) .packet,
-  .js .flow:not(.is-live) .packet i { animation-play-state: paused; }
-  .js .flow.is-live .node { animation: pop 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) backwards; animation-delay: calc(var(--i) * 120ms + 120ms); }
-  .js .flow.is-live .track::before { transition: transform 0.9s cubic-bezier(0.6, 0, 0.2, 1); }
+  .js .what:not(.is-live) .node { opacity: 0; }
+  .js .what:not(.is-live) .track::before { transform: scaleX(0); }
+  .js .what:not(.is-live) .packet,
+  .js .what:not(.is-live) .packet i { animation-play-state: paused; }
+  .js .what.is-live .node { animation: pop 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) backwards; animation-delay: calc(var(--i) * 120ms + 120ms); }
+  .js .what.is-live .track::before { transition: transform 0.9s cubic-bezier(0.6, 0, 0.2, 1); }
   @keyframes pop { from { opacity: 0; scale: 0.3; } to { opacity: 1; scale: 1; } }
-
-  .rail {
-    margin-top: 1.25rem; padding-top: 1.1rem;
-    border-top: 1px dashed var(--line);
-    display: grid; grid-template-columns: auto repeat(3, minmax(0, 1fr));
-    gap: 0.6rem; align-items: center;
-  }
-  .rail-label { font-size: 0.9rem; color: var(--ink-2); padding-right: 0.4rem; }
-  .rail-btn {
-    -webkit-appearance: none; appearance: none;
-    min-height: 2.75rem; padding: 0.55rem 1rem;
-    border: 1.5px solid var(--line); border-radius: 999px;
-    background: none; color: var(--ink);
-    font: inherit; font-size: 0.95rem; font-weight: 560; line-height: 1.2;
-    cursor: pointer; transition: background-color 0.15s, border-color 0.15s, color 0.15s;
-  }
-  .rail-btn[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--panel); }
-
-  .detail { margin-top: 1.6rem; min-height: 9rem; }
-  .detail-item { max-width: 64ch; }
-  .detail-item h3 {
-    display: flex; align-items: center; gap: 0.6rem;
-    font-size: 1.2rem; font-weight: 720; font-stretch: 110%;
-  }
-  .swatch { width: 12px; height: 12px; flex: none; border-radius: 50%; background: var(--c, var(--ink-2)); }
-  .detail-item p { margin-top: 0.5rem; }
-  .detail-item .tools { margin-top: 0.6rem; font-size: 0.95rem; color: var(--ink-2); }
-  .js .detail-item { display: none; }
-  .js .detail-item.is-on { display: block; animation: fade-in 0.25s ease; }
-  .no-js .detail-item + .detail-item { margin-top: 1.5rem; }
   @keyframes fade-in { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
-
-  @media (hover: hover) {
-    a:hover { text-decoration-thickness: 2px; }
-    .nav a:hover { color: var(--ink); background: color-mix(in srgb, var(--ink) 6%, transparent); }
-    .theme-btn:hover { border-color: var(--ink-2); }
-    .btn:hover { background: color-mix(in srgb, var(--ink) 8%, transparent); }
-    .btn-primary:hover { background: color-mix(in srgb, var(--ink) 86%, var(--paper)); }
-    .stage:hover .node { scale: 1.15; }
-    .stage[aria-pressed="true"]:hover .node { scale: 1.35; }
-    .rail-btn:hover { border-color: var(--ink-2); }
-  }
 
   /* Sections */
   .section { padding-block: clamp(3.5rem, 8vw, 6rem); }
@@ -307,50 +328,66 @@
   /* Selected work */
   .work {
     list-style: none; margin: 2.75rem 0 0; padding: 0;
-    display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 3rem 3.5rem;
+    display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 3rem 2.5rem;
   }
-  .work-item { border-top: 1px solid var(--line); padding-top: 1.5rem; }
-  .work-item h3 { margin-top: 0.9rem; font-size: 1.3rem; font-weight: 720; font-stretch: 110%; line-height: 1.25; }
-  .work-item p { margin-top: 0.6rem; max-width: 58ch; }
-  .layers { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.9rem; font-size: 0.875rem; color: var(--ink-2); }
-  .strip { position: relative; display: inline-flex; align-items: center; gap: 9px; }
-  .strip::before { content: ""; position: absolute; left: 4px; right: 4px; top: 50%; height: 2px; margin-top: -1px; background: var(--line); }
-  .strip i { position: relative; width: 11px; height: 11px; border-radius: 50%; background: var(--paper); border: 2px solid var(--line); }
-  .strip i.on { background: var(--c); border-color: var(--c); }
-  .strip i:nth-child(1) { --c: var(--raw); }
-  .strip i:nth-child(2) { --c: var(--bronze); }
-  .strip i:nth-child(3) { --c: var(--silver); }
-  .strip i:nth-child(4) { --c: var(--gold); }
-  .strip i:nth-child(5) { --c: var(--ink); border-radius: 3px; rotate: 45deg; width: 10px; height: 10px; }
+  .work-item { border-top: 1px solid var(--line); padding-top: 1.4rem; }
+  .work-item h3 { margin-top: 0.9rem; font-size: 1.25rem; font-weight: 720; font-stretch: 110%; line-height: 1.25; }
+  .work-item p { margin-top: 0.6rem; }
+  .tags { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .tag {
+    display: inline-flex; align-items: center; gap: 0.35rem;
+    padding: 0.28rem 0.65rem; border: 1px solid var(--line); border-radius: 999px;
+    font-size: 0.82rem; font-weight: 560; line-height: 1.2;
+    color: var(--ink-2); text-decoration: none;
+  }
+  .tag .ico { width: 0.95rem; height: 0.95rem; }
 
-  /* Experience */
-  .timeline { list-style: none; margin: 2.5rem 0 0; padding: 0; }
-  .timeline li {
-    display: grid; grid-template-columns: 11rem minmax(0, 1fr); gap: 1.5rem;
-    padding-block: 1.6rem; border-top: 1px solid var(--line);
+  /* Experience and education */
+  .orgs { display: grid; gap: 2.75rem; margin-top: 2.5rem; }
+  .org-head { display: flex; align-items: center; gap: 1rem; }
+  .logo-org { width: 3.5rem; height: 3.5rem; border-radius: 14px; border: 1px solid var(--tile-line); }
+  .logo-org img { width: 2.6rem; height: 2.6rem; }
+  .logo-org .logo-fallback { font-size: 0.95rem; }
+  .org-name { font-size: 1.3rem; font-weight: 740; font-stretch: 108%; line-height: 1.25; }
+  .org-name a { text-decoration: underline; text-decoration-color: var(--line); text-decoration-thickness: 2px; text-underline-offset: 0.3em; }
+  .org-meta { margin-top: 0.1rem; color: var(--ink-2); font-size: 0.95rem; }
+  .roles { list-style: none; margin: 0.75rem 0 0 1.75rem; padding: 0; border-left: 2px solid var(--line); }
+  .roles li {
+    position: relative;
+    display: grid; grid-template-columns: 9rem minmax(0, 1fr); gap: 1.25rem;
+    padding: 1.1rem 0 1.1rem 2.25rem;
   }
+  .roles li::before {
+    content: ""; position: absolute; left: -7px; top: 1.55rem;
+    width: 12px; height: 12px; border-radius: 50%;
+    background: var(--paper); border: 2px solid var(--ink-2);
+  }
+  .roles li:first-child::before { background: var(--ink); border-color: var(--ink); }
   .when { padding-top: 0.15rem; font-size: 0.95rem; color: var(--ink-2); font-variant-numeric: tabular-nums; }
-  .role { font-size: 1.2rem; font-weight: 700; font-stretch: 106%; line-height: 1.3; }
-  .org { margin-top: 0.15rem; color: var(--ink-2); }
-  .timeline .what { margin-top: 0.6rem; max-width: 62ch; }
+  .role { font-size: 1.15rem; font-weight: 700; font-stretch: 106%; line-height: 1.3; }
+  .what-did { margin-top: 0.45rem; max-width: 64ch; }
 
-  /* Skills */
+  /* Credentials and toolkit */
   .skills-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 3rem 4rem; margin-top: 2.5rem; }
   .skills-grid h3 { font-size: 1.15rem; font-weight: 720; font-stretch: 110%; }
   .certs { list-style: none; margin: 1rem 0 0; padding: 0; }
   .certs li {
-    display: grid; grid-template-columns: 9.5rem minmax(0, 1fr) auto; gap: 1rem; align-items: baseline;
-    padding-block: 0.9rem; border-top: 1px solid var(--line);
+    display: grid; grid-template-columns: auto 6.75rem minmax(0, 1fr) auto; gap: 0.9rem; align-items: center;
+    padding-block: 0.8rem; border-top: 1px solid var(--line);
   }
-  .code { font-size: 1.1rem; font-weight: 760; font-stretch: 118%; line-height: 1.25; }
+  .logo-cert { width: 2.5rem; height: 2.5rem; border-radius: 10px; border: 1px solid var(--tile-line); }
+  .logo-cert img { width: 1.6rem; height: 1.6rem; }
+  .code { font-size: 1.05rem; font-weight: 760; font-stretch: 116%; line-height: 1.2; }
+  .cert-name { line-height: 1.35; }
   .year { color: var(--ink-2); font-variant-numeric: tabular-nums; }
-  .toolkit { margin-top: 1rem; }
-  .toolkit div {
-    display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 1rem;
-    padding-block: 0.9rem; border-top: 1px solid var(--line);
-  }
-  .toolkit dt { font-weight: 660; }
-  .toolkit dd { color: var(--ink-2); }
+  .verify { display: inline-block; margin-top: 1rem; font-weight: 600; }
+  .wall { list-style: none; margin: 1rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(6.25rem, 1fr)); gap: 1.1rem 0.75rem; }
+  .wall li { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; text-align: center; font-size: 0.85rem; font-weight: 560; line-height: 1.25; }
+  .wall .logo { width: 3.25rem; height: 3.25rem; border-radius: 14px; border: 1px solid var(--tile-line); }
+  .wall .logo img { width: 2rem; height: 2rem; }
+  .wall .logo.is-missing { display: none; }
+  .also { margin-top: 1.25rem; color: var(--ink-2); font-size: 0.95rem; }
+  .also strong { color: var(--ink); font-weight: 650; }
 
   /* Contact */
   .contact p { margin-top: 0.9rem; max-width: 56ch; color: var(--ink-2); }
@@ -364,21 +401,39 @@
 
   /* Footer */
   .site-foot { padding-block: 2.5rem; border-top: 1px solid var(--line); font-size: 0.9rem; color: var(--ink-2); }
-  .site-foot .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; }
+  .site-foot .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.75rem 1.5rem; }
+  .fineprint { flex-basis: 100%; font-size: 0.82rem; }
 
+  @media (hover: hover) {
+    a:hover { text-decoration-thickness: 2px; }
+    .nav a:hover { color: var(--ink); background: color-mix(in srgb, var(--ink) 6%, transparent); }
+    .theme-btn:hover { border-color: var(--ink-2); }
+    .btn:hover { background: color-mix(in srgb, var(--ink) 8%, transparent); }
+    .btn-primary:hover { background: color-mix(in srgb, var(--ink) 86%, var(--paper)); }
+    .tab:not([aria-selected="true"]):hover { border-color: var(--ink-2); }
+    .stage:hover .node { scale: 1.15; }
+    .stage[aria-pressed="true"]:hover .node { scale: 1.35; }
+    .tag:hover { color: var(--ink); border-color: var(--ink-2); }
+    .org-name a:hover { text-decoration-color: currentColor; }
+  }
+
+  @media (max-width: 1000px) {
+    .tabs { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .work { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
   /* Small screens: the pipeline turns vertical */
   @media (max-width: 760px) {
+    .panel-grid, .skills-grid, .work { grid-template-columns: 1fr; }
     .stages { grid-template-columns: 1fr; grid-auto-rows: 4rem; }
     .stage { flex-direction: row; justify-content: flex-start; gap: 1.1rem; padding: 0 0.5rem; text-align: left; }
     .track-clip { inset: 0 0 0 -1.5rem; }
     .track { left: calc(1.5rem + 0.5rem + 10px); right: auto; top: 2rem; bottom: 2rem; width: 0; height: auto; }
     .track::before { left: -1px; right: auto; top: 0; bottom: 0; width: 2px; height: auto; transform-origin: center top; }
-    .js .flow:not(.is-live) .track::before { transform: scaleY(0); }
+    .js .what:not(.is-live) .track::before { transform: scaleY(0); }
     .packet { animation-name: travel-y; }
     .packet i { animation-name: refine-y; }
-    .rail { grid-template-columns: 1fr; }
-    .rail-btn { text-align: left; }
-    .work, .skills-grid { grid-template-columns: 1fr; }
+    .roles { margin-left: 1.75rem; }
+    .roles li { grid-template-columns: 1fr; gap: 0.3rem; padding-left: 1.5rem; }
   }
   @keyframes travel-y { from { transform: translateY(0); } to { transform: translateY(100%); } }
   @keyframes refine-y {
@@ -390,32 +445,43 @@
     95%  { opacity: 1; }
     100% { opacity: 0; transform: translate(-50%, -50%) scale(1); background: var(--gold); }
   }
-  @media (max-width: 640px) {
-    .timeline li { grid-template-columns: 1fr; gap: 0.35rem; }
-    .certs li { grid-template-columns: 1fr auto; }
-    .certs li .cert-name { grid-column: 1 / -1; grid-row: 2; }
+  @media (max-width: 560px) {
+    .tabs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .tab { flex-direction: row; align-items: center; gap: 0.55rem; padding: 0.7rem 0.75rem; font-size: 0.9rem; }
+    .certs li { grid-template-columns: auto minmax(0, 1fr) auto; }
+    .certs li .cert-name { grid-column: 2 / -1; grid-row: 2; }
   }
 
   @media (prefers-reduced-motion: reduce) {
     .packet { display: none; }
-    .js .flow .node { opacity: 1 !important; animation: none !important; }
-    .js .flow .track::before { transform: none !important; transition: none !important; }
-    .js .detail-item.is-on { animation: none; }
-    .node, .btn, .rail-btn, .site-head { transition: none; }
+    .js .what .node { opacity: 1 !important; animation: none !important; }
+    .js .what .track::before { transform: none !important; transition: none !important; }
+    .js .panel.is-on { animation: none; }
+    .node, .btn, .tab, .site-head { transition: none; }
   }
 </style>
 </head>
 
 <body id="top">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3 3 7.5 12 12l9-4.5L12 3Z"/><path d="m3 12 9 4.5 9-4.5"/><path d="m3 16.5 9 4.5 9-4.5"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M6 17v-5"/><path d="M11 17V7"/><path d="M16 17v-8"/><path d="M21 17V4"/></symbol>
+  <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 19h10a5 5 0 0 0 .8-9.94A6.5 6.5 0 0 0 5.2 10.6 4.3 4.3 0 0 0 7 19Z"/></symbol>
+  <symbol id="i-loop" viewBox="0 0 24 24"><path d="M20 11a8 8 0 0 0-14.3-4.9"/><path d="M4 13a8 8 0 0 0 14.3 4.9"/><path d="M5.5 2.5v4h4"/><path d="M18.5 21.5v-4h-4"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 5 6v5.5c0 4.3 2.9 7.9 7 9.5 4.1-1.6 7-5.2 7-9.5V6l-7-3Z"/><path d="m9 12 2.2 2.2L15.5 10"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3c.7 4.4 2.6 6.3 7 7-4.4.7-6.3 2.6-7 7-.7-4.4-2.6-6.3-7-7 4.4-.7 6.3-2.6 7-7Z"/><path d="M19 16.5c.25 1.4.85 2 2.25 2.25-1.4.25-2 .85-2.25 2.25-.25-1.4-.85-2-2.25-2.25 1.4-.25 2-.85 2.25-2.25Z"/></symbol>
+</svg>
+
 <a class="skip" href="#main">Skip to content</a>
 
 <header class="site-head">
   <div class="wrap">
     <a class="brand" href="#top">Mahtabuzzaman</a>
     <nav class="nav" aria-label="Main">
+      <a class="nav-extra" href="#what">What I do</a>
       <a class="nav-extra" href="#work">Work</a>
       <a class="nav-extra" href="#experience">Experience</a>
-      <a class="nav-extra" href="#skills">Skills</a>
+      <a class="nav-extra" href="#credentials">Credentials</a>
       <a href="#contact">Contact</a>
       <button class="theme-btn" type="button" data-theme-toggle aria-label="Switch to dark theme">
         <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
@@ -426,211 +492,374 @@
 </header>
 
 <main id="main">
-  <section class="hero wrap" aria-labelledby="hero-title">
-    <h1 id="hero-title">Shah Md. Mahtabuzzaman</h1>
-    <p class="lead">Data engineer in Dhaka. I build governed data platforms on Microsoft Fabric, turning scattered business systems into one trusted model for reporting and AI.</p>
+  <div class="hero wrap">
+    <h1>Shah Md. Mahtabuzzaman</h1>
+    <p class="lead">Data and analytics engineer in Dhaka. I build data platforms on Microsoft Fabric and Azure, turn them into analytics people trust, and keep them secure.</p>
     <div class="actions">
       <a class="btn btn-primary" href="#contact">Get in touch</a>
-      <a class="btn" href="https://www.linkedin.com/in/mahtabuzzaman">View LinkedIn</a>
+      <a class="btn" href="https://www.linkedin.com/in/mahtabuzzaman"><img class="btn-logo" src="https://cdn.jsdelivr.net/npm/devicon@2.17.0/icons/linkedin/linkedin-original.svg" alt="" width="18" height="18">View LinkedIn</a>
       <a class="btn" href="resume.pdf" download>Download résumé</a>
     </div>
 
-    <section class="flow" data-flow aria-labelledby="flow-title">
-      <h2 class="flow-title" id="flow-title">How I work</h2>
+    <section class="what" id="what" aria-labelledby="what-title">
+      <h2 class="what-title" id="what-title">What I do</h2>
 
-      <div class="flow-map">
-        <div class="track-clip" aria-hidden="true"><div class="track">
-          <span class="packet" style="--d:0.9s;--y:-16px;--s:0.7"><i></i></span>
-          <span class="packet" style="--d:1.84s;--y:12px;--s:1.25"><i></i></span>
-          <span class="packet" style="--d:2.78s;--y:-7px;--s:0.55"><i></i></span>
-          <span class="packet" style="--d:3.71s;--y:18px;--s:0.9"><i></i></span>
-          <span class="packet" style="--d:4.65s;--y:-20px;--s:1.1"><i></i></span>
-          <span class="packet" style="--d:5.59s;--y:6px;--s:0.65"><i></i></span>
-          <span class="packet" style="--d:6.53s;--y:-11px;--s:1.3"><i></i></span>
-          <span class="packet" style="--d:7.46s;--y:15px;--s:0.8"><i></i></span>
-        </div></div>
-
-        <ol class="stages">
-          <li><button class="stage" type="button" data-stage="sources" aria-pressed="false" aria-controls="flow-detail" style="--c:var(--raw);--i:0">
-            <span class="node node-hollow" aria-hidden="true"></span>
-            <span class="stage-text"><span class="stage-name">Sources</span><span class="stage-sub">ERP, CRM, files, APIs</span></span>
-          </button></li>
-          <li><button class="stage" type="button" data-stage="bronze" aria-pressed="false" aria-controls="flow-detail" style="--c:var(--bronze);--i:1">
-            <span class="node" aria-hidden="true"></span>
-            <span class="stage-text"><span class="stage-name">Bronze</span><span class="stage-sub">Raw and replayable</span></span>
-          </button></li>
-          <li><button class="stage" type="button" data-stage="silver" aria-pressed="false" aria-controls="flow-detail" style="--c:var(--silver);--i:2">
-            <span class="node" aria-hidden="true"></span>
-            <span class="stage-text"><span class="stage-name">Silver</span><span class="stage-sub">Clean and tested</span></span>
-          </button></li>
-          <li><button class="stage" type="button" data-stage="gold" aria-pressed="false" aria-controls="flow-detail" style="--c:var(--gold);--i:3">
-            <span class="node" aria-hidden="true"></span>
-            <span class="stage-text"><span class="stage-name">Gold</span><span class="stage-sub">Modeled and governed</span></span>
-          </button></li>
-          <li><button class="stage" type="button" data-stage="insight" aria-pressed="false" aria-controls="flow-detail" style="--c:var(--ink);--i:4">
-            <span class="node node-diamond" aria-hidden="true"></span>
-            <span class="stage-text"><span class="stage-name">Insight &amp; AI</span><span class="stage-sub">Power BI and AI agents</span></span>
-          </button></li>
-        </ol>
+      <div class="tabs js-only" role="tablist" aria-label="Areas of work">
+        <button class="tab" type="button" role="tab" id="tab-de" aria-controls="panel-de" aria-selected="true"><svg class="ico" aria-hidden="true"><use href="#i-layers"/></svg>Data engineering</button>
+        <button class="tab" type="button" role="tab" id="tab-analytics" aria-controls="panel-analytics" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="#i-chart"/></svg>Analytics and BI</button>
+        <button class="tab" type="button" role="tab" id="tab-cloud" aria-controls="panel-cloud" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="#i-cloud"/></svg>Cloud and Azure</button>
+        <button class="tab" type="button" role="tab" id="tab-devops" aria-controls="panel-devops" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="#i-loop"/></svg>DevOps and automation</button>
+        <button class="tab" type="button" role="tab" id="tab-security" aria-controls="panel-security" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg>Security and identity</button>
+        <button class="tab" type="button" role="tab" id="tab-ai" aria-controls="panel-ai" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="#i-spark"/></svg>AI enablement</button>
       </div>
 
-      <div class="rail">
-        <span class="rail-label">Underneath every stage</span>
-        <button class="rail-btn" type="button" data-stage="release" aria-pressed="false" aria-controls="flow-detail">Release</button>
-        <button class="rail-btn" type="button" data-stage="monitoring" aria-pressed="false" aria-controls="flow-detail">Monitoring and cost</button>
-        <button class="rail-btn" type="button" data-stage="security" aria-pressed="false" aria-controls="flow-detail">Security and identity</button>
+      <div class="panel" role="tabpanel" id="panel-de" aria-labelledby="tab-de" tabindex="0">
+        <h3 class="panel-title">Data engineering</h3>
+        <p class="panel-summary">Lakehouse and warehouse platforms on Microsoft Fabric, refined in layers so every number can be traced back to its source.</p>
+
+        <div class="flow-map">
+          <div class="track-clip" aria-hidden="true"><div class="track">
+            <span class="packet" style="--d:0.9s;--y:-16px;--s:0.7"><i></i></span>
+            <span class="packet" style="--d:1.84s;--y:12px;--s:1.25"><i></i></span>
+            <span class="packet" style="--d:2.78s;--y:-7px;--s:0.55"><i></i></span>
+            <span class="packet" style="--d:3.71s;--y:18px;--s:0.9"><i></i></span>
+            <span class="packet" style="--d:4.65s;--y:-20px;--s:1.1"><i></i></span>
+            <span class="packet" style="--d:5.59s;--y:6px;--s:0.65"><i></i></span>
+            <span class="packet" style="--d:6.53s;--y:-11px;--s:1.3"><i></i></span>
+            <span class="packet" style="--d:7.46s;--y:15px;--s:0.8"><i></i></span>
+          </div></div>
+          <ol class="stages">
+            <li><button class="stage" type="button" aria-pressed="false" data-stage data-caption="Sources: Dynamics 365, SharePoint, on-premises databases and APIs, connected without disrupting them." style="--c:var(--raw);--i:0">
+              <span class="node node-hollow" aria-hidden="true"></span>
+              <span class="stage-text"><span class="stage-name">Sources</span><span class="stage-sub">ERP, CRM, files, APIs</span></span>
+            </button></li>
+            <li><button class="stage" type="button" aria-pressed="false" data-stage data-caption="Bronze: data lands as it arrives, so any load can be replayed or audited later." style="--c:var(--bronze);--i:1">
+              <span class="node" aria-hidden="true"></span>
+              <span class="stage-text"><span class="stage-name">Bronze</span><span class="stage-sub">Raw and replayable</span></span>
+            </button></li>
+            <li><button class="stage" type="button" aria-pressed="false" data-stage data-caption="Silver: cleaned, standardized and tested with dbt and Spark before anyone builds on it." style="--c:var(--silver);--i:2">
+              <span class="node" aria-hidden="true"></span>
+              <span class="stage-text"><span class="stage-name">Silver</span><span class="stage-sub">Clean and tested</span></span>
+            </button></li>
+            <li><button class="stage" type="button" aria-pressed="false" data-stage data-caption="Gold: star schemas with shared dimensions, so each metric is defined once." style="--c:var(--gold);--i:3">
+              <span class="node" aria-hidden="true"></span>
+              <span class="stage-text"><span class="stage-name">Gold</span><span class="stage-sub">Modeled and governed</span></span>
+            </button></li>
+            <li><button class="stage" type="button" aria-pressed="false" data-stage data-caption="Insight &amp; AI: served to Power BI and AI assistants through Direct Lake semantic models." style="--c:var(--ink);--i:4">
+              <span class="node node-diamond" aria-hidden="true"></span>
+              <span class="stage-text"><span class="stage-name">Insight &amp; AI</span><span class="stage-sub">Power BI and AI agents</span></span>
+            </button></li>
+          </ol>
+        </div>
+        <p class="stage-caption js-only" aria-live="polite" data-stage-caption>Select a stage to see what happens there.</p>
+
+        <div class="panel-grid">
+          <div>
+            <p class="practice">In practice: rebuilt an enterprise reporting layer as a clean star schema and cut capacity use from <strong>90% to 30%</strong>.</p>
+          </div>
+          <div>
+            <h4 class="tools-title">Tools</h4>
+            <ul class="chips">
+              <li class="chip"><span class="logo" data-logo><img src="https://cdn.jsdelivr.net/npm/@fabric-msft/svg-icons@8.4.0/svg/fabric_48_color.svg" alt="" width="18" height="18" onerror="this.parentNode.classList.add('is-missing')"></span>Microsoft Fabric</li>
+              <li class="chip"><span class="logo" data-logo><img src="https://cdn.jsdelivr.net/npm/@fabric-msft/svg-icons@8.4.0/svg/one_lake_48_color.svg" alt="" width="18" height="18" onerror="this.parentNode.classList.add('is-missing')"></span>OneLake</li>
+              <li class="chip"><span class="logo" data-logo><img src="https://cdn.jsdelivr.net/npm/@fabric-msft/svg-icons@8.4.0/svg/data_factory_48_color.svg" alt="" width="18" height="18" onerror="this.parentNode.classList.add('is-missing')"></span>Data Factory</li>
+              <li class="chip"><span class="logo" data-logo><img src="https://api.iconify.design/logos/dbt-icon.svg" alt="" width="18" height="18" onerror="this.parentNode.classList.add('is-missing')"></span>dbt</li>
+              <li class="chip"><span class="logo" data-logo><img src="https://cdn.jsdelivr.net/npm/devicon@2.17.0/icons/apachespark/apachespark-original.svg" alt="" width="18" height="18" onerror="this.parentNode.classList.add('is-missing')"></span>Apache Spark</li>
+              <li class="chip"><span class="logo" data-logo><img src="https://cdn.jsdelivr.net/npm/devicon@2.17.0/icons/python/python-original.svg" alt="" width="18" height="18" onerror="this.parentNode.classList.add('is-missing')"></span>Python</li>
+              <li class="chip"><span class="logo" data-logo><img src="https://cdn.jsdelivr.net/npm/devicon@2.17.0/icons/azuresqldatabase/azuresqldatabase-original.svg" alt="" width="18" height="18" onerror="this.parentNode.classList.add('is-missing')"></span>SQL</li>
+            </ul>
+          </div>
+        </div>
       </div>
 
-      <div class="detail" id="flow-detail" aria-live="polite">
-        <div class="detail-item" data-detail="overview">
-          <h3>From source system to decision</h3>
-          <p>Most of my work follows this path: connect the systems a business runs on, refine the data in layers, and serve it to the reports and AI tools people use every day.</p>
-          <p class="tools js-only">Select any stage to see what I do there.</p>
+      <div class="panel" role="tabpanel" id="panel-analytics" aria-labelledby="tab-analytics" tabindex="0">
+        <h3 class="panel-title">Analytics and BI</h3>
+        <p class="panel-summary">Business questions turned into dimensional models, KPIs and dashboards that leaders actually use.</p>
+        <div class="panel-grid">
+          <div>
+            <ul class="points">
+              <li>Semantic models in Direct Lake, with one definition per metric</li>
+              <li>Executive dashboards and Power BI apps for global teams</li>
+              <li>Revenue, cost and ROI analysis; customer lifecycle and usage behavior</li>
+            </ul>
+            <p class="practice">In practice: merged overlapping semantic models into one per business area (<strong>14 became 8</strong>), so every app reads the same KPIs.</p>
+          </div>
+          <div>
+            <h4 class="tools-title">Tools</h4>
+            <ul class="chips">
+              <li class="chip"><span class="logo" data-logo><img src="https://cdn.jsdelivr.net/npm/@fabric-msft/svg-icons@8.4.0/svg/power_bi_48_color.svg" alt="" width="18" height="18" onerror="this.parentNode.classList.add('is-missing')"></span>Power BI</li>
+              <li class="chip chip-text">DAX</li>
+              <li class="chip chip-text">Direct Lake</li>
+              <li class="chip"><span class="logo" data-logo><img src="https://cdn.jsdelivr.net/npm/devicon@2.17.0/icons/azuresqldatabase/azuresqldatabase-original.svg" alt="" width="18" height="18" onerror="this.parentNode.classList.add('is-missing')"></span>SQL</li>
+              <li class="chip"><span class="logo" data-logo><img src="https://cdn.jsdelivr.net/npm/devicon@2.17.0/icons/python/python-original.svg" alt="" width="18" height="18" onerror="this.parentNode.classList.add('is-missing')"></span>Python</li>
+            </ul>
+          </div>
         </div>
-        <div class="detail-item" data-detail="sources" style="--c:var(--raw)">
-          <h3><span class="swatch" aria-hidden="true"></span>Sources</h3>
-          <p>I connect the systems a business already runs on, such as ERP and CRM platforms, SharePoint, on-premises databases and APIs, without disrupting them.</p>
-          <p class="tools">Tools: Dynamics 365 via Fabric Link, Microsoft Graph, REST APIs, on-premises gateways</p>
+      </div>
+
+      <div class="panel" role="tabpanel" id="panel-cloud" aria-labelledby="tab-cloud" tabindex="0">
+        <h3 class="panel-title">Cloud and Azure</h3>
+        <p class="panel-summary">The Azure and Fabric estate the data lives on, sized for performance and kept cost-efficient.</p>
+        <div class="panel-grid">
+          <div>
+            <ul class="points">
+              <li>Azure SQL, Storage, Key Vault and virtual machines</li>
+              <li>Fabric capacity planning, monitoring and tuning</li>
+              <li>Cost visibility and reservations, so performance holds at the lowest cost</li>
+            </ul>
+            <p class="practice">In practice: built multi-cloud cost visibility for <strong>six US clients</strong> and kept SLAs on minimum capacity.</p>
+          </div>
+          <div>
+            <h4 class="tools-title">Tools</h4>
+            <ul class="chips">
+              <li class="chip"><span class="logo" data-logo><img src="https://cdn.jsdelivr.net/npm/devicon@2.17.0/icons/azure/azure-original.svg" alt="" width="18" height="18" onerror="this.parentNode.classList.add('is-missing')"></span>Microsoft Azure</li>
+              <li class="chip"><span class="logo" data-logo><img src="https://cdn.jsdelivr.net/npm/devicon@2.17.0/icons/azuresqldatabase/azuresqldatabase-original.svg" alt="" width="18" height="18" onerror="this.parentNode.classList.add('is-missing')"></span>Azure SQL</li>
+              <li class="chip"><span class="logo" data-logo><img src="https://cdn.jsdelivr.net/npm/@fabric-msft/svg-icons@8.4.0/svg/fabric_48_color.svg" alt="" width="18" height="18" onerror="this.parentNode.classList.add('is-missing')"></span>Fabric capacity</li>
+              <li class="chip chip-text">Key Vault</li>
+              <li class="chip chip-text">Storage</li>
+              <li class="chip chip-text">Cost Management</li>
+            </ul>
+          </div>
         </div>
-        <div class="detail-item" data-detail="bronze" style="--c:var(--bronze)">
-          <h3><span class="swatch" aria-hidden="true"></span>Bronze</h3>
-          <p>Data lands as it arrives, so nothing is lost and any load can be replayed or audited later.</p>
-          <p class="tools">Tools: Fabric Pipelines, Lakehouse, OneLake, incremental loads</p>
+      </div>
+
+      <div class="panel" role="tabpanel" id="panel-devops" aria-labelledby="tab-devops" tabindex="0">
+        <h3 class="panel-title">DevOps and automation</h3>
+        <p class="panel-summary">Changes ship through reviewed, repeatable pipelines, and routine work runs on its own.</p>
+        <div class="panel-grid">
+          <div>
+            <ul class="points">
+              <li>CI/CD for Fabric and Power BI across Dev, Test and Prod, with pull-request reviews and rollbacks</li>
+              <li>Event-based alerts for capacity, refresh and cost problems, sent to Teams and email</li>
+              <li>Python and Logic Apps automation for refreshes, scaling, license cleanup and report distribution</li>
+            </ul>
+            <p class="practice">In practice: replaced manual on-call checks with <strong>automatic alerts</strong>.</p>
+          </div>
+          <div>
+            <h4 class="tools-title">Tools</h4>
+            <ul class="chips">
+              <li class="chip"><span class="logo" data-logo><img src="https://cdn.jsdelivr.net/npm/devicon@2.17.0/icons/azuredevops/azuredevops-original.svg" alt="" width="18" height="18" onerror="this.parentNode.classList.add('is-missing')"></span>Azure DevOps</li>
+              <li class="chip"><span class="logo" data-logo><img src="https://cdn.jsdelivr.net/npm/devicon@2.17.0/icons/git/git-original.svg" alt="" width="18" height="18" onerror="this.parentNode.classList.add('is-missing')"></span>Git</li>
+              <li class="chip"><span class="logo" data-logo><img src="https://cdn.jsdelivr.net/npm/devicon@2.17.0/icons/github/github-original.svg" alt="" width="18" height="18" onerror="this.parentNode.classList.add('is-missing')"></span>GitHub</li>
+              <li class="chip"><span class="logo" data-logo><img src="https://cdn.jsdelivr.net/npm/devicon@2.17.0/icons/python/python-original.svg" alt="" width="18" height="18" onerror="this.parentNode.classList.add('is-missing')"></span>Python</li>
+              <li class="chip"><span class="logo" data-logo><img src="https://cdn.jsdelivr.net/npm/devicon@2.17.0/icons/powershell/powershell-original.svg" alt="" width="18" height="18" onerror="this.parentNode.classList.add('is-missing')"></span>PowerShell</li>
+              <li class="chip chip-text">Logic Apps</li>
+            </ul>
+          </div>
         </div>
-        <div class="detail-item" data-detail="silver" style="--c:var(--silver)">
-          <h3><span class="swatch" aria-hidden="true"></span>Silver</h3>
-          <p>I clean and standardize it, with consistent types, keys and business rules, and test it before anyone builds on it.</p>
-          <p class="tools">Tools: dbt, Spark notebooks (PySpark, Spark SQL), data quality checks</p>
+      </div>
+
+      <div class="panel" role="tabpanel" id="panel-security" aria-labelledby="tab-security" tabindex="0">
+        <h3 class="panel-title">Security and identity</h3>
+        <p class="panel-summary">Microsoft 365 and Azure tenants kept secure, well governed and auditable.</p>
+        <div class="panel-grid">
+          <div>
+            <ul class="points">
+              <li>Entra ID administration: privileged roles (PIM), RBAC and Conditional Access</li>
+              <li>Service principals and app registrations managed through their whole lifecycle</li>
+              <li>Device and threat protection with Intune and Defender</li>
+            </ul>
+            <p class="practice">In practice: built sign-in analytics from Entra ID logs for a security team. <strong>AZ-500 certified.</strong></p>
+          </div>
+          <div>
+            <h4 class="tools-title">Tools</h4>
+            <ul class="chips">
+              <li class="chip chip-text">Microsoft Entra ID</li>
+              <li class="chip chip-text">Intune</li>
+              <li class="chip chip-text">Defender</li>
+              <li class="chip chip-text">Microsoft Graph</li>
+              <li class="chip"><span class="logo" data-logo><img src="https://cdn.jsdelivr.net/npm/devicon@2.17.0/icons/powershell/powershell-original.svg" alt="" width="18" height="18" onerror="this.parentNode.classList.add('is-missing')"></span>PowerShell</li>
+            </ul>
+          </div>
         </div>
-        <div class="detail-item" data-detail="gold" style="--c:var(--gold)">
-          <h3><span class="swatch" aria-hidden="true"></span>Gold</h3>
-          <p>I model it into star schemas with shared dimensions, so each metric is defined once and every team gets the same answer.</p>
-          <p class="tools">Tools: dimensional modeling, Fabric Warehouse, T-SQL</p>
-        </div>
-        <div class="detail-item" data-detail="insight" style="--c:var(--ink)">
-          <h3><span class="swatch" aria-hidden="true"></span>Insight &amp; AI</h3>
-          <p>The model is served to Power BI apps and AI assistants: fast enough for daily use, governed enough to trust.</p>
-          <p class="tools">Tools: Direct Lake semantic models, Power BI, Fabric Data Agent, Copilot Studio</p>
-        </div>
-        <div class="detail-item" data-detail="release">
-          <h3><span class="swatch" aria-hidden="true"></span>Release</h3>
-          <p>Every change moves through Dev, Test and Prod with peer-reviewed pull requests and a way back if something breaks.</p>
-          <p class="tools">Tools: Azure DevOps pipelines, Git, Fabric deployment</p>
-        </div>
-        <div class="detail-item" data-detail="monitoring">
-          <h3><span class="swatch" aria-hidden="true"></span>Monitoring and cost</h3>
-          <p>Alerts flag capacity, refresh and cost problems as they happen, and I tune workloads so the platform stays fast without overspending.</p>
-          <p class="tools">Tools: Logic Apps alerts, Fabric Capacity Metrics, FUAM, Python automation</p>
-        </div>
-        <div class="detail-item" data-detail="security">
-          <h3><span class="swatch" aria-hidden="true"></span>Security and identity</h3>
-          <p>Access stays tight and auditable across Microsoft 365 and Azure, from privileged roles to the service principals that run pipelines.</p>
-          <p class="tools">Tools: Entra ID (PIM, RBAC, Conditional Access), Intune, Defender</p>
+      </div>
+
+      <div class="panel" role="tabpanel" id="panel-ai" aria-labelledby="tab-ai" tabindex="0">
+        <h3 class="panel-title">AI enablement</h3>
+        <p class="panel-summary">Governed data first, then AI on top of it.</p>
+        <div class="panel-grid">
+          <div>
+            <ul class="points">
+              <li>Infrastructure and release pipelines for Fabric Data Agent and Copilot Studio</li>
+              <li>AI assistants built on the same star schema as the reports</li>
+              <li>Hands-on work with new Fabric features such as Real-Time Intelligence and Data Activator</li>
+            </ul>
+            <p class="practice">In practice: laid the <strong>groundwork for AI agents</strong> on a governed reporting layer.</p>
+          </div>
+          <div>
+            <h4 class="tools-title">Tools</h4>
+            <ul class="chips">
+              <li class="chip"><span class="logo" data-logo><img src="https://cdn.jsdelivr.net/npm/@fabric-msft/svg-icons@8.4.0/svg/data_agent_48_item.svg" alt="" width="18" height="18" onerror="this.parentNode.classList.add('is-missing')"></span>Fabric Data Agent</li>
+              <li class="chip chip-text">Copilot Studio</li>
+              <li class="chip"><span class="logo" data-logo><img src="https://cdn.jsdelivr.net/npm/@fabric-msft/svg-icons@8.4.0/svg/real_time_intelligence_48_color.svg" alt="" width="18" height="18" onerror="this.parentNode.classList.add('is-missing')"></span>Real-Time Intelligence</li>
+              <li class="chip chip-text">Data Activator</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
-  </section>
+  </div>
 
   <section class="section wrap" id="work" aria-labelledby="work-title">
     <h2 id="work-title">Selected work</h2>
     <p class="section-intro">Client details stay private. Here is what changed.</p>
     <ul class="work">
       <li class="work-item">
-        <div class="layers">
-          <span class="strip" aria-hidden="true"><i></i><i></i><i class="on"></i><i class="on"></i><i class="on"></i></span>
-          <span>Silver, Gold, Insight &amp; AI</span>
-        </div>
+        <ul class="tags">
+          <li><a class="tag" href="#what" data-goto="de"><svg class="ico" aria-hidden="true"><use href="#i-layers"/></svg>Data engineering</a></li>
+          <li><a class="tag" href="#what" data-goto="analytics"><svg class="ico" aria-hidden="true"><use href="#i-chart"/></svg>Analytics</a></li>
+        </ul>
         <h3>Rebuilt an enterprise reporting layer</h3>
         <p>A global energy services company had more than a hundred overlapping SQL views behind its reports. I replaced them with a clean star schema, and the load on its Fabric capacity dropped from <strong>90% to 30%</strong>.</p>
       </li>
       <li class="work-item">
-        <div class="layers">
-          <span class="strip" aria-hidden="true"><i></i><i></i><i></i><i class="on"></i><i class="on"></i></span>
-          <span>Gold, Insight &amp; AI</span>
-        </div>
+        <ul class="tags">
+          <li><a class="tag" href="#what" data-goto="analytics"><svg class="ico" aria-hidden="true"><use href="#i-chart"/></svg>Analytics</a></li>
+        </ul>
         <h3>One definition for every metric</h3>
-        <p>Reports sat on overlapping semantic models that didn't always agree. I merged them into one model per business area (<strong>14 became 8</strong>), so every app now reads the same KPIs.</p>
+        <p>Reports sat on overlapping semantic models that didn't always agree. I merged them into one Direct Lake model per business area (<strong>14 became 8</strong>), so every app reads the same KPIs.</p>
       </li>
       <li class="work-item">
-        <div class="layers">
-          <span class="strip" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span>
-          <span>Sources, Bronze</span>
-        </div>
-        <h3>Moved Dynamics 365 feeds to Fabric Link</h3>
-        <p>Migrated an integration from Synapse Link to Fabric Link, rewrote <strong>140+ queries</strong> for Fabric and validated them row by row. The approach was later rolled out across the enterprise.</p>
-      </li>
-      <li class="work-item">
-        <div class="layers">
-          <span class="strip" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span>
-          <span>End to end</span>
-        </div>
+        <ul class="tags">
+          <li><a class="tag" href="#what" data-goto="cloud"><svg class="ico" aria-hidden="true"><use href="#i-cloud"/></svg>Cloud</a></li>
+          <li><a class="tag" href="#what" data-goto="analytics"><svg class="ico" aria-hidden="true"><use href="#i-chart"/></svg>Analytics</a></li>
+        </ul>
         <h3>Cloud spend in one view</h3>
         <p>Built cost visibility products for <strong>six US clients</strong> in oil and gas, aerospace and engineering, bringing spend from several cloud providers into one Power BI view.</p>
+      </li>
+      <li class="work-item">
+        <ul class="tags">
+          <li><a class="tag" href="#what" data-goto="devops"><svg class="ico" aria-hidden="true"><use href="#i-loop"/></svg>DevOps</a></li>
+        </ul>
+        <h3>Alerts instead of on-call checks</h3>
+        <p>Set up event-based monitoring that flags capacity, refresh and cost problems in Teams and email as they happen, alongside release pipelines that move every change through <strong>Dev, Test and Prod</strong>.</p>
+      </li>
+      <li class="work-item">
+        <ul class="tags">
+          <li><a class="tag" href="#what" data-goto="security"><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg>Security</a></li>
+          <li><a class="tag" href="#what" data-goto="de"><svg class="ico" aria-hidden="true"><use href="#i-layers"/></svg>Data engineering</a></li>
+        </ul>
+        <h3>Sign-in analytics for a security team</h3>
+        <p>Pulled <strong>Entra ID sign-in logs</strong> through Microsoft Graph into Fabric and modeled them into a Power BI dashboard the security team acts on.</p>
+      </li>
+      <li class="work-item">
+        <ul class="tags">
+          <li><a class="tag" href="#what" data-goto="ai"><svg class="ico" aria-hidden="true"><use href="#i-spark"/></svg>AI</a></li>
+          <li><a class="tag" href="#what" data-goto="devops"><svg class="ico" aria-hidden="true"><use href="#i-loop"/></svg>DevOps</a></li>
+        </ul>
+        <h3>Groundwork for AI assistants</h3>
+        <p>Set up the infrastructure and release pipeline for <strong>Fabric Data Agent and Copilot Studio</strong> on the governed star schema, so AI agents work from the same trusted numbers as the reports.</p>
       </li>
     </ul>
   </section>
 
   <section class="section wrap" id="experience" aria-labelledby="experience-title">
-    <h2 id="experience-title">Experience</h2>
-    <ol class="timeline">
-      <li>
-        <p class="when">Jan 2025 – now</p>
-        <div>
-          <h3 class="role">Associate Analytics Engineer, Data Engineering &amp; Security</h3>
-          <p class="org">Data Crafters LLC, Microsoft Solutions Partner</p>
-          <p class="what">I own a global client's data platform on Microsoft Fabric end to end, from ingestion and modeling to release pipelines, monitoring and AI readiness, and work directly with stakeholders in the US and Europe. I also handle Microsoft 365 and Azure security administration.</p>
-        </div>
-      </li>
-      <li>
-        <p class="when">Apr – Dec 2024</p>
-        <div>
-          <h3 class="role">Junior Data Analyst</h3>
-          <p class="org">Data Crafters LLC</p>
-          <p class="what">Built cost visibility products for US clients, moved Dynamics 365 feeds from Synapse Link to Fabric Link, and automated routine platform work with Python and Logic Apps.</p>
-        </div>
-      </li>
-      <li>
-        <p class="when">Feb – Mar 2024</p>
-        <div>
-          <h3 class="role">Data Analyst Intern</h3>
-          <p class="org">Data Crafters LLC</p>
-          <p class="what">Built a pipeline that brought Entra ID sign-in logs into Fabric through Microsoft Graph, and the Power BI dashboard the security team used to act on them.</p>
-        </div>
-      </li>
-      <li>
-        <p class="when">2019 – 2023</p>
-        <div>
-          <h3 class="role">BSc in Computer Science &amp; Engineering</h3>
-          <p class="org">Ahsanullah University of Science &amp; Technology</p>
-          <p class="what">Merit-based scholarship recipient.</p>
-        </div>
-      </li>
-    </ol>
+    <h2 id="experience-title">Experience and education</h2>
+    <div class="orgs">
+      <article class="org">
+        <header class="org-head">
+          <span class="logo logo-org" data-logo><img src="https://datacrafters.io/wp-content/uploads/2025/01/Favicon-300x300.png" alt="" width="42" height="42" onerror="this.parentNode.classList.add('is-missing')"><span class="logo-fallback" aria-hidden="true">DC</span></span>
+          <div>
+            <h3 class="org-name"><a href="https://datacrafters.io">Data Crafters LLC</a></h3>
+            <p class="org-meta">Microsoft Solutions Partner. Dhaka, Bangladesh</p>
+          </div>
+        </header>
+        <ol class="roles">
+          <li>
+            <p class="when">Jan 2025 – now</p>
+            <div>
+              <h4 class="role">Associate Analytics Engineer, Data Engineering &amp; Security</h4>
+              <p class="what-did">I own a global client's data platform on Microsoft Fabric end to end, from ingestion and modeling to release pipelines, monitoring and AI readiness, and handle Microsoft 365 and Azure security administration. I work directly with stakeholders in the US and Europe.</p>
+            </div>
+          </li>
+          <li>
+            <p class="when">Apr – Dec 2024</p>
+            <div>
+              <h4 class="role">Junior Data Analyst</h4>
+              <p class="what-did">Built cost visibility products for US clients, moved Dynamics 365 feeds from Synapse Link to Fabric Link (140+ queries, validated row by row), and automated routine platform work with Python and Logic Apps.</p>
+            </div>
+          </li>
+          <li>
+            <p class="when">Feb – Mar 2024</p>
+            <div>
+              <h4 class="role">Data Analyst Intern</h4>
+              <p class="what-did">Built a pipeline that brought Entra ID sign-in logs into Fabric through Microsoft Graph, and the Power BI dashboard the security team used.</p>
+            </div>
+          </li>
+        </ol>
+      </article>
+
+      <article class="org">
+        <header class="org-head">
+          <span class="logo logo-org" data-logo><img src="data:image/svg+xml;charset=utf-8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4yLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCA0MTUgNDk0LjMiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQxNSA0OTQuMzsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4NCgkuc3Qwe2ZpbGw6I0ZGRkZGRjt9DQoJLnN0MXtmaWxsOiMyMzFGMjA7fQ0KCS5zdDJ7ZmlsbDojMTY4MTQxO30NCgkuc3Qze2ZpbGw6I0QyNzUyODt9DQo8L3N0eWxlPg0KPHRpdGxlPmxvZ28oQXVzdCk8L3RpdGxlPg0KPGcgaWQ9Il9Hcm91cF8iPg0KCTxnIGlkPSJfR3JvdXBfMiI+DQoJCTxwb2x5Z29uIGlkPSJfUGF0aF8iIGNsYXNzPSJzdDAiIHBvaW50cz0iNDExLjgsMzgzLjYgNDExLjgsMy4yIDMuMiwzLjIgMy4yLDM4My42IDEyNC44LDQ5MS4xIDI5MS41LDQ5MS4xIAkJIi8+DQoJPC9nPg0KCTxnIGlkPSJfR3JvdXBfMyI+DQoJCTxwYXRoIGlkPSJfQ29tcG91bmRfUGF0aF8iIGNsYXNzPSJzdDEiIGQ9Ik0yOTIuOCw0OTQuM0gxMjMuNkwwLDM4NVYwaDQxNXYzODVMMjkyLjgsNDk0LjN6IE0xMjYuMSw0ODhoMTY0LjJsMTE4LjItMTA1LjdWNi4zSDYuNQ0KCQkJdjM3NS45TDEyNi4xLDQ4OHoiLz4NCgk8L2c+DQo8L2c+DQo8ZyBpZD0iX0dyb3VwXzQiPg0KCTxnIGlkPSJfR3JvdXBfNSI+DQoJCTxwYXRoIGlkPSJfQ29tcG91bmRfUGF0aF8yIiBjbGFzcz0ic3QxIiBkPSJNNjMuOSwxMTUuOWwxOC40LDIzLjZINDUuNUw2My45LDExNS45eiBNMzIsMTU2LjdsOC43LTExLjNIODdsOC43LDExLjNoMTIuNWwtMzgtNDYuMQ0KCQkJSDU4LjFsLTM3LjMsNDYuMUgzMnoiLz4NCgk8L2c+DQoJPGcgaWQ9Il9Hcm91cF82Ij4NCgkJPHBhdGggaWQ9Il9Db21wb3VuZF9QYXRoXzMiIGNsYXNzPSJzdDEiIGQ9Ik0xMzYuNCwxMTAuNnYzOS43aDQ5Ljd2LTM5LjdoMTEuNHYzNS4yYzAsNC4yLTEuMSw3LjEtMy40LDguNnMtNi40LDIuMy0xMi43LDIuM0gxNDENCgkJCWMtNi4yLDAtMTAuNC0wLjgtMTIuNi0yLjNjLTIuMi0xLjUtMy4zLTQuNC0zLjQtOC42di0zNS4zSDEzNi40TDEzNi40LDExMC42eiIvPg0KCTwvZz4NCgk8ZyBpZD0iX0dyb3VwXzciPg0KCQk8cGF0aCBpZD0iX0NvbXBvdW5kX1BhdGhfNCIgY2xhc3M9InN0MSIgZD0iTTI5MS4yLDExNi44SDI0M3YxM2g0Mi45YzYuMSwwLDEwLjMsMC44LDEyLjYsMi4zczMuNCw0LjMsMy40LDguNXY1LjINCgkJCWMwLDQuMi0xLjEsNy4xLTMuMyw4LjZjLTIuMiwxLjUtNi41LDIuMy0xMi43LDIuM2gtMzkuOGMtNi4yLDAtMTAuNC0wLjgtMTIuNy0yLjNjLTIuMi0xLjUtMy40LTQuNC0zLjQtOC42di0xLjNsMTAuNS0xLjd2Ny41aDUxDQoJCQl2LTEzLjloLTQzYy02LjIsMC0xMC41LTAuOC0xMi42LTIuM3MtMy4zLTQuNC0zLjMtOC42di00YzAtNC4yLDEuMS03LjEsMy4zLTguNmMyLjItMS41LDYuNC0yLjMsMTIuNi0yLjNoMzYuMw0KCQkJYzYuMSwwLDEwLjMsMC44LDEyLjYsMi4yczMuNSw0LjEsMy41LDcuOXYxbC05LjksMS45TDI5MS4yLDExNi44TDI5MS4yLDExNi44eiIvPg0KCTwvZz4NCgk8ZyBpZD0iX0dyb3VwXzgiPg0KCQk8cGF0aCBpZD0iX0NvbXBvdW5kX1BhdGhfNSIgY2xhc3M9InN0MSIgZD0iTTM2Mi45LDExNi44djM5LjloLTExLjN2LTM5LjloLTMxLjN2LTYuMmg3NHY2LjJIMzYyLjl6Ii8+DQoJPC9nPg0KPC9nPg0KPGcgaWQ9Il9Hcm91cF85Ij4NCgk8cGF0aCBpZD0iX1BhdGhfMiIgY2xhc3M9InN0MiIgZD0iTTE4LjgsNzcuNHYxOS44aDM3Ny40Vjc3LjRjMCwwLTg3LjUtMC41LTE2NC44LTU5LjVoLTUwQzE4MS40LDE4LDEyMC4zLDc3LjQsMTguOCw3Ny40eiIvPg0KPC9nPg0KPGcgaWQ9Il9Hcm91cF8xMCI+DQoJPGcgaWQ9Il9Hcm91cF8xMSI+DQoJCTxwb2x5Z29uIGlkPSJfUGF0aF8zIiBjbGFzcz0ic3QyIiBwb2ludHM9IjExNC40LDE4OC4yIDExNC40LDM0NC42IDE5OC4zLDMyMy45IDE5OC4zLDIxMC43IAkJIi8+DQoJPC9nPg0KCTxnIGlkPSJfR3JvdXBfMTIiPg0KCQk8cG9seWdvbiBpZD0iX1BhdGhfNCIgY2xhc3M9InN0MiIgcG9pbnRzPSIzMDAuNiwxODguMiAzMDAuNiwzNDQuNiAyMTYuNywzMjMuOSAyMTYuNywyMTAuNyAJCSIvPg0KCTwvZz4NCjwvZz4NCjxnIGlkPSJfR3JvdXBfMTMiPg0KCTxwYXRoIGlkPSJfQ29tcG91bmRfUGF0aF82IiBjbGFzcz0ic3QzIiBkPSJNMjgxLjIsNDc1LjVIMTMzLjhsLTAuNC0wLjRMMjEuOSwzNzguNHYtMC43bDAuMy0xOTFoNzd2MTYxLjZsNjMuNSw1NS4yaDg2LjQNCgkJbDY0LjEtNTUuNlYxODYuOGg3OS45djE5MS42bC0wLjUsMC40TDI4MS4yLDQ3NS41eiBNMTM1LDQ3Mi41aDE0NS4xbDExMC05NS41VjE4OS43aC03My45djE1OS41bC02Niw1Ny4zaC04OC42bC0wLjQtMC40bC02NS01Ni40DQoJCVYxODkuN0gyNS4ybC0wLjMsMTg3LjRMMTM1LDQ3Mi41eiIvPg0KPC9nPg0KPGcgaWQ9Il9Hcm91cF8xNCI+DQoJPGcgaWQ9Il9Hcm91cF8xNSI+DQoJCTxwYXRoIGlkPSJfQ29tcG91bmRfUGF0aF83IiBjbGFzcz0ic3QxIiBkPSJNMTc1LjksMzY5LjJoLTUuOFYzNTNjLTIuMywxLjUtNC45LDIuNi03LjYsMy4zdi0zLjljMS44LTAuNSwzLjQtMS4yLDUtMi4xDQoJCQljMS42LTAuOCwyLjgtMiwzLjctMy42aDQuOEwxNzUuOSwzNjkuMkwxNzUuOSwzNjkuMnoiLz4NCgk8L2c+DQoJPGcgaWQ9Il9Hcm91cF8xNiI+DQoJCTxwYXRoIGlkPSJfQ29tcG91bmRfUGF0aF84IiBjbGFzcz0ic3QxIiBkPSJNMTk2LjcsMzU3LjVjLTEuNywxLjMtNCwxLjMtNS43LDBjLTAuOC0wLjgtMS4zLTItMS4yLTMuMmMtMC4zLTEuOSwxLjEtMy43LDMtNA0KCQkJYzAuMywwLDAuNSwwLDAuOCwwYzEuMSwwLDIuMiwwLjQsMywxLjFjMC45LDAuOCwxLjQsMiwxLjMsMy4yQzE5OCwzNTUuNywxOTcuNSwzNTYuOCwxOTYuNywzNTcuNXogTTE4Ny42LDM2OC4yDQoJCQljMS43LDEsMy43LDEuNSw1LjcsMS40YzIuOSwwLjEsNS44LTAuOCw4LTIuN2MyLjEtMS44LDMuMS00LjgsMy4xLTguOWMwLTQtMS02LjktMy04LjdjLTIuMS0xLjgtNC44LTIuNy03LjYtMi42DQoJCQljLTIuNS0wLjEtNSwwLjYtNywyLjFjLTEuOCwxLjMtMi44LDMuMy0yLjcsNS41YzAsMi4xLDAuOSw0LjEsMi42LDUuM2MxLjgsMS40LDMuOSwyLjEsNi4yLDJjMiwwLjEsNC0wLjYsNS41LTEuOQ0KCQkJYy0wLjIsMi42LTAuOCw0LjMtMS42LDUuMWMtMC44LDAuOC0xLjksMS4yLTMsMS4yYy0wLjgsMC0xLjYtMC4yLTIuMy0wLjZjLTAuNi0wLjQtMS0xLjEtMS4xLTEuOWwtNS42LDAuNQ0KCQkJQzE4NS4xLDM2NS43LDE4Ni4xLDM2Ny4zLDE4Ny42LDM2OC4yTDE4Ny42LDM2OC4yeiIvPg0KCTwvZz4NCgk8ZyBpZD0iX0dyb3VwXzE3Ij4NCgkJPHBhdGggaWQ9Il9Db21wb3VuZF9QYXRoXzkiIGNsYXNzPSJzdDEiIGQ9Ik0yMjAuNCwzNTcuNWMtMS43LDEuMy00LDEuMy01LjcsMGMtMC44LTAuOC0xLjMtMi0xLjItMy4yYy0wLjMtMS45LDEuMS0zLjcsMy00DQoJCQljMC4yLDAsMC41LDAsMC44LDBjMS4xLDAsMi4yLDAuNCwzLDEuMWMwLjksMC44LDEuNCwyLDEuMywzLjJDMjIxLjYsMzU1LjcsMjIxLjIsMzU2LjgsMjIwLjQsMzU3LjV6IE0yMTEuMywzNjguMg0KCQkJYzEuNywxLDMuNywxLjUsNS43LDEuNGMyLjksMC4xLDUuOC0wLjgsOC0yLjdjMi0xLjgsMy4xLTQuOCwzLjEtOC45YzAtNC0xLTYuOS0zLTguN2MtMi4xLTEuOC00LjgtMi43LTcuNi0yLjYNCgkJCWMtMi41LTAuMS01LDAuNi03LDIuMWMtMS44LDEuMy0yLjgsMy4zLTIuOCw1LjVjMCwyLjEsMC45LDQuMSwyLjYsNS4zYzEuOCwxLjQsMy45LDIuMSw2LjIsMmMyLDAuMSw0LTAuNiw1LjUtMS45DQoJCQljLTAuMiwyLjYtMC44LDQuMy0xLjYsNS4xYy0wLjgsMC44LTEuOSwxLjItMywxLjJjLTAuOCwwLTEuNi0wLjItMi4zLTAuNmMtMC42LTAuNC0xLTEuMS0xLjEtMS45bC01LjYsMC41DQoJCQlDMjA4LjcsMzY1LjcsMjA5LjgsMzY3LjMsMjExLjMsMzY4LjJMMjExLjMsMzY4LjJ6Ii8+DQoJPC9nPg0KCTxnIGlkPSJfR3JvdXBfMTgiPg0KCQk8cGF0aCBpZD0iX0NvbXBvdW5kX1BhdGhfMTAiIGNsYXNzPSJzdDEiIGQ9Ik0yMzIsMzYzLjVsNS44LTAuNGMwLjEsMC45LDAuNywxLjgsMS41LDIuM2MwLjgsMC42LDEuOCwwLjksMi44LDAuOA0KCQkJYzEuMSwwLDIuMi0wLjQsMy4xLTEuMWMwLjktMC45LDEuMy0yLjEsMS4zLTMuM2MwLjEtMS4yLTAuNC0yLjMtMS4zLTMuMWMtMC45LTAuNy0yLjEtMS4xLTMuMy0xYy0xLjYsMC0zLjIsMC42LTQuNSwxLjZsLTQuNy0wLjUNCgkJCWwzLTExLjdoMTUuNHY0aC0xMWwtMC45LDMuOGMxLjMtMC41LDIuNi0wLjcsNC0wLjdjMi40LTAuMSw0LjcsMC43LDYuNiwyLjFjMS43LDEuMiwyLjcsMy4zLDIuNyw1LjRjMCwxLjktMC44LDMuNy0yLjIsNC45DQoJCQljLTIsMi00LjcsMy04LjMsM2MtMi40LDAuMS00LjgtMC41LTYuOS0xLjZDMjMzLjUsMzY3LjEsMjMyLjMsMzY1LjQsMjMyLDM2My41eiIvPg0KCTwvZz4NCjwvZz4NCjxnIGlkPSJfR3JvdXBfMTkiPg0KCTxnIGlkPSJfR3JvdXBfMjAiPg0KCQk8cGF0aCBpZD0iX0NvbXBvdW5kX1BhdGhfMTEiIGNsYXNzPSJzdDEiIGQ9Ik01NC44LDIwNS45bDkuMywyLjFsLTkuMywyLjFWMjA1LjlMNTQuOCwyMDUuOXogTTQ0LjksMjE1LjdsMjUuMS02LjF2LTMuM2wtMjUuMS01LjkNCgkJCXYzLjNsNS43LDEuM3Y2LjFsLTUuNywxLjNWMjE1Ljd6Ii8+DQoJPC9nPg0KCTxnIGlkPSJfR3JvdXBfMjEiPg0KCQk8cGF0aCBpZD0iX0NvbXBvdW5kX1BhdGhfMTIiIGNsYXNzPSJzdDEiIGQ9Ik02OS45LDIxNy4zdjMuMWgtOS45djZoOS45djMuMUg0NC45di0zLjFoMTF2LTZoLTExdi0zLjFINjkuOXoiLz4NCgk8L2c+DQoJPGcgaWQ9Il9Hcm91cF8yMiI+DQoJCTxwYXRoIGlkPSJfQ29tcG91bmRfUGF0aF8xMyIgY2xhc3M9InN0MSIgZD0iTTUzLjUsMjM1Yy0xLjMsMC4xLTQuOCwwLjUtNC44LDMuM2MwLDIuMSwxLjksMywzLjUsM2MyLjEsMCwyLjYtMS4xLDMuNy0zLjkNCgkJCWMwLjYtMS41LDItNC45LDcuNS00LjljMi43LDAsNywxLjEsNyw1LjVjMCwzLTEuOSw1LjctNy42LDUuOGwtMC4yLTMuMWMxLjMtMC4xLDMuNi0wLjQsMy42LTIuOGMwLjEtMS4zLTAuOS0yLjUtMi4yLTIuNg0KCQkJYy0wLjEsMC0wLjIsMC0wLjMsMGMtMS42LDAtMi4zLDEtMy4zLDMuNHMtMi4xLDUuNS04LjMsNS41Yy0zLDAtNS42LTEuMi02LjYtMi41Yy0wLjgtMS0xLjItMi4zLTEuMS0zLjZjMC0xLjYsMC4zLTUuNyw4LjYtNi4zDQoJCQlMNTMuNSwyMzV6Ii8+DQoJPC9nPg0KCTxnIGlkPSJfR3JvdXBfMjMiPg0KCQk8cGF0aCBpZD0iX0NvbXBvdW5kX1BhdGhfMTQiIGNsYXNzPSJzdDEiIGQ9Ik01NC44LDI1MC43bDkuMywyLjFsLTkuMywyLjFWMjUwLjd6IE00NC45LDI2MC41bDI1LjEtNi4xdi0zLjJsLTI1LjEtNS45djMuMw0KCQkJbDUuNywxLjN2Ni4xbC01LjcsMS4zTDQ0LjksMjYwLjVMNDQuOSwyNjAuNXoiLz4NCgk8L2c+DQoJPGcgaWQ9Il9Hcm91cF8yNCI+DQoJCTxwYXRoIGlkPSJfQ29tcG91bmRfUGF0aF8xNSIgY2xhc3M9InN0MSIgZD0iTTY5LjksMjYyLjJ2M2wtMTYuNyw2LjJsMCwwaDE2Ljd2Mi45SDQ0Ljl2LTMuMWwxNi40LTYuMWwwLDBINDQuOXYtMi44TDY5LjksMjYyLjINCgkJCUw2OS45LDI2Mi4yeiIvPg0KCTwvZz4NCgk8ZyBpZD0iX0dyb3VwXzI1Ij4NCgkJPHBhdGggaWQ9Il9Db21wb3VuZF9QYXRoXzE2IiBjbGFzcz0ic3QxIiBkPSJNNjkuOSwyODAuNkg1Ni40Yy0zLDAtNC4yLDAtNS40LDAuNGMtMS4zLDAuMy0yLjIsMS40LTIuMiwyLjdjMCwyLjksMywyLjksNy4zLDIuOQ0KCQkJaDEzLjh2M0g1Ni44Yy00LjUsMC03LTAuMS04LjktMC44Yy0yLjItMC43LTMuNi0yLjgtMy41LTUuMWMwLTYuMiw2LjMtNi4yLDEyLjEtNi4ySDcwTDY5LjksMjgwLjZMNjkuOSwyODAuNnoiLz4NCgk8L2c+DQoJPGcgaWQ9Il9Hcm91cF8yNiI+DQoJCTxwYXRoIGlkPSJfQ29tcG91bmRfUGF0aF8xNyIgY2xhc3M9InN0MSIgZD0iTTY5LjksMjkyLjh2My4xSDQ5LjF2Ny42aC00LjJ2LTEwLjdINjkuOXoiLz4NCgk8L2c+DQoJPGcgaWQ9Il9Hcm91cF8yNyI+DQoJCTxwYXRoIGlkPSJfQ29tcG91bmRfUGF0aF8xOCIgY2xhc3M9InN0MSIgZD0iTTY5LjksMzA1Ljh2My4xSDQ5LjF2Ny42aC00LjJ2LTEwLjdINjkuOXoiLz4NCgk8L2c+DQoJPGcgaWQ9Il9Hcm91cF8yOCI+DQoJCTxwYXRoIGlkPSJfQ29tcG91bmRfUGF0aF8xOSIgY2xhc3M9InN0MSIgZD0iTTU0LjgsMzIyLjdsOS4zLDIuMWwtOS4zLDIuMVYzMjIuN3ogTTQ0LjksMzMyLjVsMjUuMS02LjF2LTMuMmwtMjUuMS01Ljl2My4zDQoJCQlsNS43LDEuM3Y2LjFsLTUuNywxLjNMNDQuOSwzMzIuNUw0NC45LDMzMi41eiIvPg0KCTwvZz4NCgk8ZyBpZD0iX0dyb3VwXzI5Ij4NCgkJPHBhdGggaWQ9Il9Db21wb3VuZF9QYXRoXzIwIiBjbGFzcz0ic3QxIiBkPSJNNjkuOSwzMzQuMXYzLjFoLTkuOXY2aDkuOXYzLjFINDQuOXYtMy4xaDExdi02aC0xMXYtMy4xSDY5Ljl6Ii8+DQoJPC9nPg0KCTxnIGlkPSJfR3JvdXBfMzAiPg0KCQk8cGF0aCBpZD0iX0NvbXBvdW5kX1BhdGhfMjEiIGNsYXNzPSJzdDEiIGQ9Ik02Ny41LDM1OC45bC05LjYsOC4zYy0yLjEsMS44LTMsMi42LTMuNSwzLjZjLTAuNywxLjEtMC40LDIuNSwwLjcsMy4zDQoJCQljMi41LDIuMSw0LjYsMC4zLDcuNi0yLjRsOS44LTguNWwyLjYsMi4ybC05LjMsOGMtMy4yLDIuNy01LDQuMi03LDQuOGMtMi4zLDAuOC00LjksMC4yLTYuNy0xLjVjLTUuMi00LjUtMC43LTguNCwzLjQtMTEuOQ0KCQkJbDkuNS04LjJMNjcuNSwzNTguOXoiLz4NCgk8L2c+DQoJPGcgaWQ9Il9Hcm91cF8zMSI+DQoJCTxwYXRoIGlkPSJfQ29tcG91bmRfUGF0aF8yMiIgY2xhc3M9InN0MSIgZD0iTTc3LjgsMzY3LjhsMi41LDIuMmwtNi42LDE0LjhsMCwwbDExLjgtMTAuMmwyLjQsMi4xbC0xNy43LDE1LjNsLTIuNi0yLjJsNi41LTE0LjQNCgkJCWwwLDBsLTExLjYsMTBsLTIuNC0yTDc3LjgsMzY3Ljh6Ii8+DQoJPC9nPg0KCTxnIGlkPSJfR3JvdXBfMzIiPg0KCQk8cGF0aCBpZD0iX0NvbXBvdW5kX1BhdGhfMjMiIGNsYXNzPSJzdDEiIGQ9Ik05MC41LDM3OC43bDIuNSwyLjJsLTE3LjcsMTUuM2wtMi42LTIuMkw5MC41LDM3OC43eiIvPg0KCTwvZz4NCgk8ZyBpZD0iX0dyb3VwXzMzIj4NCgkJPHBhdGggaWQ9Il9Db21wb3VuZF9QYXRoXzI0IiBjbGFzcz0ic3QxIiBkPSJNOTQuMiwzODJsMi44LDIuNGwtOS45LDE0LjFsMCwwbDE2LjItOC43bDIuNywyLjNsLTIyLjMsMTEuNGwtMi44LTIuNEw5NC4yLDM4MnoiLz4NCgk8L2c+DQoJPGcgaWQ9Il9Hcm91cF8zNCI+DQoJCTxwYXRoIGlkPSJfQ29tcG91bmRfUGF0aF8yNSIgY2xhc3M9InN0MSIgZD0iTTEwNy40LDM5My4zbDkuNCw4LjJsLTMsMi42bC02LjktNmwtMy45LDMuNGw2LjQsNS41bC0zLDIuNmwtNi40LTUuNWwtNC44LDQuMQ0KCQkJbDcuMSw2LjFsLTMsMi42bC05LjYtOC4zTDEwNy40LDM5My4zeiIvPg0KCTwvZz4NCgk8ZyBpZD0iX0dyb3VwXzM1Ij4NCgkJPHBhdGggaWQ9Il9Db21wb3VuZF9QYXRoXzI2IiBjbGFzcz0ic3QxIiBkPSJNMTE4LjgsNDA4LjRsMiwxLjdjMS43LDEuNSwyLDEuOCwyLjEsMi41YzAsMC45LTAuNSwxLjYtMS4yLDIuMQ0KCQkJYy0wLjgsMC44LTEuOSwxLjItMywxYy0wLjktMC41LTEuOC0xLjEtMi41LTEuOGwtMS45LTEuNkwxMTguOCw0MDguNHogTTEwMS41LDQxOC45bDIuNiwyLjJsNy40LTYuNGwwLjUsMC41DQoJCQljMS43LDEuNSwxLjUsMS45LTAuMSw2bC0yLDQuOWwzLjEsMi43bDEuOS00LjNjMS42LTMuNiwxLjctNC42LDEuNS02LjJ2MGMwLjYsMC40LDEuMywwLjYsMiwwLjhjMiwwLjUsNC40LTAuNCw2LjMtMi4xDQoJCQljMS43LTEuNSwzLjItMy44LDIuNS01LjdjLTAuNi0xLjItMS40LTIuMS0yLjUtMi45bC01LjQtNC43TDEwMS41LDQxOC45eiIvPg0KCTwvZz4NCgk8ZyBpZD0iX0dyb3VwXzM2Ij4NCgkJPHBhdGggaWQ9Il9Db21wb3VuZF9QYXRoXzI3IiBjbGFzcz0ic3QxIiBkPSJNMTIyLjMsNDI2LjRjLTAuOCwwLjktMi45LDMuMy0wLjYsNS4zYzEuNCwxLjMsMy42LDEuMyw1LDBjMS41LTEuMywwLjktMi4zLTAuNi01DQoJCQljLTAuOC0xLjUtMi42LTQuNywxLjMtOC4xYzEuOS0xLjcsNS45LTMuNSw5LjYtMC4zYzIuNSwyLjEsMy40LDUuMy0wLjUsOC45bC0yLjctMi4xYzAuOC0wLjksMi4zLTIuNSwwLjMtNC4yDQoJCQljLTAuOC0wLjctMi41LTEuNi0zLjktMC4zYy0xLjEsMS0wLjgsMi4xLDAuNSw0LjVzMy4xLDUuMy0xLjMsOWMtMS44LDEuNy00LjMsMi41LTYuNywyLjJjLTEuNC0wLjMtMi43LTAuOS0zLjgtMS45DQoJCQljLTEuNC0xLjItNC42LTQuMywwLjgtOS44TDEyMi4zLDQyNi40eiIvPg0KCTwvZz4NCgk8ZyBpZD0iX0dyb3VwXzM3Ij4NCgkJPHBhdGggaWQ9Il9Db21wb3VuZF9QYXRoXzI4IiBjbGFzcz0ic3QxIiBkPSJNMTQzLjgsNDI0LjhsMi42LDIuMmwtMTcuNywxNS4zbC0yLjYtMi4yTDE0My44LDQyNC44eiIvPg0KCTwvZz4NCgk8ZyBpZD0iX0dyb3VwXzM4Ij4NCgkJPHBhdGggaWQ9Il9Db21wb3VuZF9QYXRoXzI5IiBjbGFzcz0ic3QxIiBkPSJNMTQ4LjcsNDM0LjJsLTMuOC0zLjNsMy0yLjZsMTAuMSw4LjdsLTMsMi42bC0zLjgtMy4zbC0xNC43LDEyLjhMMTM0LDQ0Nw0KCQkJTDE0OC43LDQzNC4yeiIvPg0KCTwvZz4NCgk8ZyBpZD0iX0dyb3VwXzM5Ij4NCgkJPHBhdGggaWQ9Il9Db21wb3VuZF9QYXRoXzMwIiBjbGFzcz0ic3QxIiBkPSJNMTUyLjcsNDUwLjNsNS42LTEyLjlsMywyLjZsLTQsOC42bDEwLTMuNWwyLjksMi42bC0xNSw0LjlsLTcuNCw2LjRsLTIuNi0yLjINCgkJCUwxNTIuNyw0NTAuM3oiLz4NCgk8L2c+DQoJPGcgaWQ9Il9Hcm91cF80MCI+DQoJCTxwYXRoIGlkPSJfQ29tcG91bmRfUGF0aF8zMSIgY2xhc3M9InN0MSIgZD0iTTE5OSw0NTEuMmMwLTMuMiwwLjktNy41LDUtNy41YzQuNCwwLDUsNC45LDUsNy40YzAsNi4zLTMsNy41LTUsNy41DQoJCQljLTEuOCwwLTMuNC0xLjEtNC4xLTIuN0MxOTkuMiw0NTQuNCwxOTguOSw0NTIuOCwxOTksNDUxLjJ6IE0xOTUuMyw0NTEuM2MwLDUsMiwxMS4xLDguNywxMS4xYzYuMywwLDguNy01LjUsOC43LTExLjINCgkJCWMwLTYuMy0yLjgtMTEuMi04LjctMTEuMkMxOTguMyw0NDAsMTk1LjIsNDQ0LjQsMTk1LjMsNDUxLjNMMTk1LjMsNDUxLjN6Ii8+DQoJPC9nPg0KCTxnIGlkPSJfR3JvdXBfNDEiPg0KCQk8cGF0aCBpZD0iX0NvbXBvdW5kX1BhdGhfMzIiIGNsYXNzPSJzdDEiIGQ9Ik0yMTUuNiw0NDAuNGgxMi4zdjMuN2gtOC43djUuMWg3LjV2My43aC03LjV2OS4yaC0zLjZMMjE1LjYsNDQwLjRMMjE1LjYsNDQwLjR6Ii8+DQoJPC9nPg0KCTxnIGlkPSJfR3JvdXBfNDIiPg0KCQk8cGF0aCBpZD0iX0NvbXBvdW5kX1BhdGhfMzMiIGNsYXNzPSJzdDEiIGQ9Ik0yNjQuNCw0NTEuNmMxLDAuNywzLjksMi41LDYuMiwwLjVjMS4yLTAuOCwxLjUtMi41LDAuNi0zLjcNCgkJCWMtMC4yLTAuMi0wLjQtMC41LTAuNi0wLjZjLTEuNS0xLjMtMi43LTAuOC01LjgsMC41Yy0xLjcsMC43LTUuNSwyLjMtOS40LTEuMWMtMS45LTEuNy00LTUuMS0wLjMtOC4zYzIuNS0yLjIsNi4xLTIuOSwxMC4yLDAuNA0KCQkJbC0yLjQsMi40Yy0xLTAuNy0yLjktMi00LjktMC4yYy0wLjgsMC43LTEuOCwyLjEtMC40LDMuNGMxLjEsMSwyLjQsMC43LDUuMS0wLjVzNi4xLTIuNiwxMC40LDEuMWMyLjIsMS45LDMsNC4zLDIuNiw1LjgNCgkJCWMtMC40LDEuMy0xLjEsMi40LTIuMiwzLjNjLTEuNCwxLjItNC45LDQtMTEuMy0wLjdMMjY0LjQsNDUxLjZ6Ii8+DQoJPC9nPg0KCTxnIGlkPSJfR3JvdXBfNDMiPg0KCQk8cGF0aCBpZD0iX0NvbXBvdW5kX1BhdGhfMzQiIGNsYXNzPSJzdDEiIGQ9Ik0yODUuNiw0MzQuNGMxLjEsMS40LDQuNiw1LjksMC41LDkuNWMtMy41LDMtOS4zLDItMTQuOC0yLjgNCgkJCWMtNC45LTQuMy03LjUtOS42LTMuNC0xMy4yYzEuNi0xLjQsMy44LTIsNS45LTEuNmMxLjYsMC4zLDMsMC44LDQuNCwxLjdsLTEuNywyLjljLTIuMy0xLjQtNC4zLTEuNC01LjctMC4zDQoJCQljLTMuMiwyLjgsMS43LDcsMi44LDcuOWMxLjUsMS40LDMuMiwyLjUsNS4xLDMuM2MxLjQsMC41LDMsMC4zLDQuMi0wLjZjMS43LTEuNSwwLjctMy43LTAuOS01LjdMMjg1LjYsNDM0LjR6Ii8+DQoJPC9nPg0KCTxnIGlkPSJfR3JvdXBfNDQiPg0KCQk8cGF0aCBpZD0iX0NvbXBvdW5kX1BhdGhfMzUiIGNsYXNzPSJzdDEiIGQ9Ik0yNzUuNCw0MjJsMi41LTIuMmwxNy44LDE1LjNsLTIuNSwyLjJMMjc1LjQsNDIyeiIvPg0KCTwvZz4NCgk8ZyBpZD0iX0dyb3VwXzQ1Ij4NCgkJPHBhdGggaWQ9Il9Db21wb3VuZF9QYXRoXzM2IiBjbGFzcz0ic3QxIiBkPSJNMjgwLjUsNDE3LjZsOS40LTguMWwzLDIuNmwtNi45LDZsMy45LDMuNGw2LjQtNS41bDMsMi42TDI5Myw0MjRsNC44LDQuMWw3LjEtNi4xDQoJCQlsMywyLjZsLTkuNyw4LjRMMjgwLjUsNDE3LjZ6Ii8+DQoJPC9nPg0KCTxnIGlkPSJfR3JvdXBfNDYiPg0KCQk8cGF0aCBpZD0iX0NvbXBvdW5kX1BhdGhfMzciIGNsYXNzPSJzdDEiIGQ9Ik0yOTIuMyw0MDcuM2wyLjUtMi4ybDE3LDUuOGwwLDBMMzAwLDQwMC43bDIuNC0yLjFsMTcuNywxNS4zbC0yLjYsMi4ybC0xNi43LTUuNmwwLDANCgkJCWwxMS42LDEwbC0yLjQsMi4xTDI5Mi4zLDQwNy4zeiIvPg0KCTwvZz4NCgk8ZyBpZD0iX0dyb3VwXzQ3Ij4NCgkJPHBhdGggaWQ9Il9Db21wb3VuZF9QYXRoXzM4IiBjbGFzcz0ic3QxIiBkPSJNMzI4LDM5Ny43YzEuMSwxLjQsNC42LDUuOSwwLjUsOS41Yy0zLjQsMy05LjMsMi0xNC44LTIuOGMtNC45LTQuMy03LjUtOS42LTMuNC0xMy4yDQoJCQljMS42LTEuNCwzLjgtMS45LDUuOS0xLjVjMS42LDAuMywzLjEsMC45LDQuNCwxLjdsLTEuNywyLjljLTIuMy0xLjQtNC4zLTEuNC01LjYtMC4yYy0zLjIsMi43LDEuNyw2LjksMi44LDcuOQ0KCQkJYzEuNSwxLjQsMy4yLDIuNSw1LjEsMy4zYzEuNCwwLjUsMywwLjMsNC4yLTAuNmMxLjctMS41LDAuNy0zLjctMC45LTUuN0wzMjgsMzk3Ljd6Ii8+DQoJPC9nPg0KCTxnIGlkPSJfR3JvdXBfNDgiPg0KCQk8cGF0aCBpZD0iX0NvbXBvdW5kX1BhdGhfMzkiIGNsYXNzPSJzdDEiIGQ9Ik0zMTcuOSwzODUuMmw5LjQtOC4xbDMsMi42bC02LjksNS45bDMuOSwzLjRsNi40LTUuNWwzLDIuNmwtNi40LDUuNWw0LjgsNC4xbDcuMS02LjENCgkJCWwzLDIuNmwtOS42LDguNEwzMTcuOSwzODUuMnoiLz4NCgk8L2c+DQoJPGcgaWQ9Il9Hcm91cF80OSI+DQoJCTxwYXRoIGlkPSJfQ29tcG91bmRfUGF0aF80MCIgY2xhc3M9InN0MSIgZD0iTTM1OC4zLDM3MC45YzAuNSwxLDAuNCwyLjItMC4zLDMuMmMtMS4xLDEuMy0zLDEtNC40LDAuMmMtMS40LTAuOC0yLjMtMi4zLTIuMy0zLjkNCgkJCUwzNTguMywzNzAuOXogTTM2NC4zLDM2Ni45Yy0xLjMsMC4zLTIuNiwwLjYtNCwwLjZjLTAuNC0wLjctMC45LTEuNS0zLjMtMy42bC0yLjUsMS44YzAuNywwLjYsMS40LDEuMywxLjksMmwtNS4yLTAuNQ0KCQkJYy0wLjMtMi4zLTAuOS00LTMtNS4zYy0yLjYtMS42LTUuOC0xLjUtNy41LDAuN2MtMS44LDIuMi0wLjksNC44LDEuNiw2LjNjMS43LDAuOSwzLjYsMS40LDUuNiwxLjRjMCwyLjgsMS41LDUuNCw0LDYuNw0KCQkJYzEuNiwxLDYuNSwzLDkuNi0wLjljMS4yLTEuNCwxLjUtMy4zLDAuOC01YzEuNC0wLjEsMi43LTAuMyw0LjEtMC43TDM2NC4zLDM2Ni45eiBNMzQ2LjIsMzY2LjhjLTAuOCwwLTEuNS0wLjItMi4yLTAuNQ0KCQkJYy0wLjctMC4zLTEtMS4yLTAuNy0xLjljMC0wLjEsMC4xLTAuMiwwLjItMC4zYzAuOC0wLjgsMi0wLjksMi45LTAuMmMwLjYsMC4zLDEsMC45LDEuMiwxLjVjMC4xLDAuNSwwLjIsMSwwLjMsMS40TDM0Ni4yLDM2Ni44eiINCgkJCS8+DQoJPC9nPg0KCTxnIGlkPSJfR3JvdXBfNTAiPg0KCQk8cGF0aCBpZD0iX0NvbXBvdW5kX1BhdGhfNDEiIGNsYXNzPSJzdDEiIGQ9Ik0zNDkuMywzNDQuMXY0LjZIMzQ1di0xMi40aDQuMnY0LjZoMjAuOHYzLjFIMzQ5LjN6Ii8+DQoJPC9nPg0KCTxnIGlkPSJfR3JvdXBfNTEiPg0KCQk8cGF0aCBpZD0iX0NvbXBvdW5kX1BhdGhfNDIiIGNsYXNzPSJzdDEiIGQ9Ik0zNDUsMzM0LjN2LTExLjZoNC4ydjguNGg1LjZ2LTcuOGg0LjJ2Ny44aDYuOHYtOC43aDQuMnYxMS44TDM0NSwzMzQuM0wzNDUsMzM0LjN6Ig0KCQkJLz4NCgk8L2c+DQoJPGcgaWQ9Il9Hcm91cF81MiI+DQoJCTxwYXRoIGlkPSJfQ29tcG91bmRfUGF0aF80MyIgY2xhc3M9InN0MSIgZD0iTTM2Mi40LDMwNi44YzIsMC4zLDguMSwxLjQsOC4xLDYuNWMwLDQuMi00LjksNy4xLTEyLjgsNy4xYy03LDAtMTMuMi0yLjItMTMuMi03LjMNCgkJCWMwLTIsMS4xLTMuOCwyLjktNC44YzEuNC0wLjgsMi45LTEuMyw0LjUtMS41bDEuMiwzLjFjLTIuNywwLjQtNC4yLDEuNy00LjIsMy4zYzAsMy45LDYuOSwzLjksOC41LDMuOWMyLjEsMC4xLDQuMy0wLjIsNi4zLTAuOA0KCQkJYzEuNC0wLjQsMi4zLTEuNiwyLjUtM2MwLTIuMS0yLjYtMy01LjMtMy40TDM2Mi40LDMwNi44eiIvPg0KCTwvZz4NCgk8ZyBpZD0iX0dyb3VwXzUzIj4NCgkJPHBhdGggaWQ9Il9Db21wb3VuZF9QYXRoXzQ0IiBjbGFzcz0ic3QxIiBkPSJNMzQ1LDMwNC4xVjMwMWg5Ljl2LTYuMUgzNDV2LTMuMWgyNS4xdjMuMWgtMTF2Ni4xaDExdjMuMUwzNDUsMzA0LjFMMzQ1LDMwNC4xeiIvPg0KCTwvZz4NCgk8ZyBpZD0iX0dyb3VwXzU0Ij4NCgkJPHBhdGggaWQ9Il9Db21wb3VuZF9QYXRoXzQ1IiBjbGFzcz0ic3QxIiBkPSJNMzQ1LDI4OC4zdi0zbDE2LjctNi4zbDAsMEgzNDV2LTIuOWgyNS4xdjMuMWwtMTYuNCw2LjJsMCwwaDE2LjR2Mi45TDM0NSwyODguMw0KCQkJTDM0NSwyODguM3oiLz4NCgk8L2c+DQoJPGcgaWQ9Il9Hcm91cF81NSI+DQoJCTxwYXRoIGlkPSJfQ29tcG91bmRfUGF0aF80NiIgY2xhc3M9InN0MSIgZD0iTTM1Ny42LDI3MC4yYy0zLjcsMC04LjYtMC43LTguNi00LjNjMC0zLjgsNS43LTQuMyw4LjUtNC4zYzcuMiwwLDguNywyLjYsOC43LDQuMw0KCQkJYzAsMS45LTEuNywzLTMuMiwzLjVDMzYxLjMsMjcwLDM1OS40LDI3MC4yLDM1Ny42LDI3MC4yeiBNMzU3LjcsMjczLjRjNS44LDAsMTIuOC0xLjcsMTIuOC03LjZjMC01LjUtNi40LTcuNS0xMi45LTcuNQ0KCQkJYy03LjMsMC0xMywyLjUtMTMsNy41QzM0NC42LDI3MC43LDM0OS43LDI3My40LDM1Ny43LDI3My40TDM1Ny43LDI3My40eiIvPg0KCTwvZz4NCgk8ZyBpZD0iX0dyb3VwXzU2Ij4NCgkJPHBhdGggaWQ9Il9Db21wb3VuZF9QYXRoXzQ3IiBjbGFzcz0ic3QxIiBkPSJNMzQ1LDI1NS44di0zLjFoMjAuOHYtNy44aDQuMnYxMUgzNDV6Ii8+DQoJPC9nPg0KCTxnIGlkPSJfR3JvdXBfNTciPg0KCQk8cGF0aCBpZD0iX0NvbXBvdW5kX1BhdGhfNDgiIGNsYXNzPSJzdDEiIGQ9Ik0zNTcuNiwyNDBjLTMuNywwLTguNi0wLjctOC42LTQuM2MwLTMuOCw1LjctNC4zLDguNS00LjNjNy4yLDAsOC43LDIuNiw4LjcsNC4zDQoJCQljMCwxLjktMS43LDMtMy4yLDMuNUMzNjEuMywyMzkuOCwzNTkuNCwyNDAuMSwzNTcuNiwyNDB6IE0zNTcuNywyNDMuM2M1LjgsMCwxMi44LTEuNywxMi44LTcuNWMwLTUuNS02LjQtNy41LTEyLjktNy41DQoJCQljLTcuMywwLTEzLDIuNS0xMyw3LjVDMzQ0LjYsMjQwLjUsMzQ5LjcsMjQzLjIsMzU3LjcsMjQzLjNMMzU3LjcsMjQzLjN6Ii8+DQoJPC9nPg0KCTxnIGlkPSJfR3JvdXBfNTgiPg0KCQk8cGF0aCBpZD0iX0NvbXBvdW5kX1BhdGhfNDkiIGNsYXNzPSJzdDEiIGQ9Ik0zNTYuNywyMTguNnYtNi44aDEwYzEuNCwwLjksMy45LDMuNSwzLjksNi42YzAsNS42LTYuNSw3LjktMTMsNy45DQoJCQljLTYuMSwwLTEyLjktMi4xLTEyLjktNy43YzAtMi41LDEuMi01LjgsNy40LTYuNmwxLDMuMWMtMy41LDAuNi00LDIuNS00LDMuNWMwLDEuMywwLjcsMi43LDIuOCwzLjZjMS44LDAuNiwzLjcsMC45LDUuNSwwLjgNCgkJCWMzLjcsMCw4LjktMC44LDguOS00LjVjMC0xLjgtMS43LTMuMy0yLjEtMy43aC0zLjJ2My42TDM1Ni43LDIxOC42TDM1Ni43LDIxOC42eiIvPg0KCTwvZz4NCgk8ZyBpZD0iX0dyb3VwXzU5Ij4NCgkJPHBhdGggaWQ9Il9Db21wb3VuZF9QYXRoXzUwIiBjbGFzcz0ic3QxIiBkPSJNMzU5LjYsMjA0LjdsLTE0LjUsNS43di0zLjdsOS45LTMuNmwtOS45LTMuNnYtMy42bDE0LjYsNS43aDEwLjV2My4xSDM1OS42eiIvPg0KCTwvZz4NCjwvZz4NCjwvc3ZnPg0K" alt="" width="42" height="42" onerror="this.parentNode.classList.add('is-missing')"><span class="logo-fallback" aria-hidden="true">AUST</span></span>
+          <div>
+            <h3 class="org-name"><a href="https://www.aust.edu">Ahsanullah University of Science &amp; Technology</a></h3>
+            <p class="org-meta">Tejgaon, Dhaka</p>
+          </div>
+        </header>
+        <ol class="roles">
+          <li>
+            <p class="when">2019 – 2023</p>
+            <div>
+              <h4 class="role"><a href="https://www.aust.edu/cse">BSc in Computer Science &amp; Engineering</a></h4>
+              <p class="what-did">Merit-based scholarship recipient.</p>
+            </div>
+          </li>
+        </ol>
+      </article>
+    </div>
   </section>
 
-  <section class="section wrap" id="skills" aria-labelledby="skills-title">
-    <h2 id="skills-title">Credentials and toolkit</h2>
+  <section class="section wrap" id="credentials" aria-labelledby="credentials-title">
+    <h2 id="credentials-title">Credentials and toolkit</h2>
     <div class="skills-grid">
       <div>
         <h3>Certifications</h3>
         <ul class="certs">
-          <li><span class="code">DP-700</span><span class="cert-name">Fabric Data Engineer Associate</span><span class="year">2025</span></li>
-          <li><span class="code">DP-600</span><span class="cert-name">Fabric Analytics Engineer Associate</span><span class="year">2024</span></li>
-          <li><span class="code">AZ-500</span><span class="cert-name">Azure Security Engineer Associate</span><span class="year">2024</span></li>
-          <li><span class="code">Applied Skills</span><span class="cert-name">Real-Time Intelligence with Microsoft Fabric</span><span class="year">2024</span></li>
-          <li><span class="code">SQL</span><span class="cert-name">Advanced certificate, HackerRank</span><span class="year">2024</span></li>
+          <li>
+            <span class="logo logo-cert" data-logo><img src="https://cdn.jsdelivr.net/npm/@fabric-msft/svg-icons@8.4.0/svg/data_engineering_48_color.svg" alt="" width="26" height="26" onerror="this.parentNode.classList.add('is-missing')"><span class="logo-fallback" aria-hidden="true">MS</span></span>
+            <span class="code">DP-700</span><span class="cert-name">Microsoft Certified: Fabric Data Engineer Associate</span><span class="year">2025</span>
+          </li>
+          <li>
+            <span class="logo logo-cert" data-logo><img src="https://cdn.jsdelivr.net/npm/@fabric-msft/svg-icons@8.4.0/svg/fabric_48_color.svg" alt="" width="26" height="26" onerror="this.parentNode.classList.add('is-missing')"><span class="logo-fallback" aria-hidden="true">MS</span></span>
+            <span class="code">DP-600</span><span class="cert-name">Microsoft Certified: Fabric Analytics Engineer Associate</span><span class="year">2024</span>
+          </li>
+          <li>
+            <span class="logo logo-cert" data-logo><img src="https://cdn.jsdelivr.net/npm/devicon@2.17.0/icons/azure/azure-original.svg" alt="" width="26" height="26" onerror="this.parentNode.classList.add('is-missing')"><span class="logo-fallback" aria-hidden="true">MS</span></span>
+            <span class="code">AZ-500</span><span class="cert-name">Microsoft Certified: Azure Security Engineer Associate</span><span class="year">2024</span>
+          </li>
+          <li>
+            <span class="logo logo-cert" data-logo><img src="https://cdn.jsdelivr.net/npm/@fabric-msft/svg-icons@8.4.0/svg/real_time_intelligence_48_color.svg" alt="" width="26" height="26" onerror="this.parentNode.classList.add('is-missing')"><span class="logo-fallback" aria-hidden="true">MS</span></span>
+            <span class="code">Applied Skills</span><span class="cert-name">Real-Time Intelligence with Microsoft Fabric</span><span class="year">2024</span>
+          </li>
+          <li>
+            <span class="logo logo-cert" data-logo><img src="https://api.iconify.design/simple-icons/hackerrank.svg?color=%2300EA64" alt="" width="26" height="26" onerror="this.parentNode.classList.add('is-missing')"><span class="logo-fallback" aria-hidden="true">HR</span></span>
+            <span class="code">SQL</span><span class="cert-name">Advanced certificate, HackerRank</span><span class="year">2024</span>
+          </li>
         </ul>
+        <a class="verify" href="https://learn.microsoft.com/en-us/users/your-learn-id/transcript/your-transcript-id">Verify my certifications on Microsoft Learn</a>
       </div>
       <div>
         <h3>Toolkit</h3>
-        <dl class="toolkit">
-          <div><dt>Platform</dt><dd>Microsoft Fabric (OneLake, Lakehouse, Warehouse, Pipelines, Notebooks), dbt</dd></div>
-          <div><dt>Languages</dt><dd>SQL (T-SQL, Spark SQL), Python (PySpark), DAX, PowerShell</dd></div>
-          <div><dt>Modeling</dt><dd>Medallion architecture, dimensional modeling, star and snowflake schemas</dd></div>
-          <div><dt>Delivery</dt><dd>Azure DevOps CI/CD, Git and GitHub, Logic Apps, Fabric REST and Microsoft Graph APIs</dd></div>
-          <div><dt>BI and AI</dt><dd>Power BI (Direct Lake, DAX), Fabric Data Agent, Copilot Studio</dd></div>
-          <div><dt>Security</dt><dd>Entra ID (PIM, RBAC, Conditional Access), Intune, Defender</dd></div>
-        </dl>
+        <ul class="wall">
+          <li><span class="logo" data-logo><img src="https://cdn.jsdelivr.net/npm/@fabric-msft/svg-icons@8.4.0/svg/fabric_48_color.svg" alt="" width="32" height="32" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></span>Microsoft Fabric</li>
+          <li><span class="logo" data-logo><img src="https://cdn.jsdelivr.net/npm/@fabric-msft/svg-icons@8.4.0/svg/power_bi_48_color.svg" alt="" width="32" height="32" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></span>Power BI</li>
+          <li><span class="logo" data-logo><img src="https://cdn.jsdelivr.net/npm/@fabric-msft/svg-icons@8.4.0/svg/one_lake_48_color.svg" alt="" width="32" height="32" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></span>OneLake</li>
+          <li><span class="logo" data-logo><img src="https://cdn.jsdelivr.net/npm/@fabric-msft/svg-icons@8.4.0/svg/data_factory_48_color.svg" alt="" width="32" height="32" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></span>Data Factory</li>
+          <li><span class="logo" data-logo><img src="https://cdn.jsdelivr.net/npm/@fabric-msft/svg-icons@8.4.0/svg/data_warehouse_48_color.svg" alt="" width="32" height="32" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></span>Fabric Warehouse</li>
+          <li><span class="logo" data-logo><img src="https://cdn.jsdelivr.net/npm/@fabric-msft/svg-icons@8.4.0/svg/real_time_intelligence_48_color.svg" alt="" width="32" height="32" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></span>Real-Time Intelligence</li>
+          <li><span class="logo" data-logo><img src="https://cdn.jsdelivr.net/npm/devicon@2.17.0/icons/azure/azure-original.svg" alt="" width="32" height="32" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></span>Microsoft Azure</li>
+          <li><span class="logo" data-logo><img src="https://cdn.jsdelivr.net/npm/devicon@2.17.0/icons/azuresqldatabase/azuresqldatabase-original.svg" alt="" width="32" height="32" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></span>Azure SQL</li>
+          <li><span class="logo" data-logo><img src="https://cdn.jsdelivr.net/npm/devicon@2.17.0/icons/azuredevops/azuredevops-original.svg" alt="" width="32" height="32" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></span>Azure DevOps</li>
+          <li><span class="logo" data-logo><img src="https://api.iconify.design/logos/dbt-icon.svg" alt="" width="32" height="32" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></span>dbt</li>
+          <li><span class="logo" data-logo><img src="https://cdn.jsdelivr.net/npm/devicon@2.17.0/icons/apachespark/apachespark-original.svg" alt="" width="32" height="32" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></span>Apache Spark</li>
+          <li><span class="logo" data-logo><img src="https://cdn.jsdelivr.net/npm/devicon@2.17.0/icons/python/python-original.svg" alt="" width="32" height="32" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></span>Python</li>
+          <li><span class="logo" data-logo><img src="https://cdn.jsdelivr.net/npm/devicon@2.17.0/icons/powershell/powershell-original.svg" alt="" width="32" height="32" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></span>PowerShell</li>
+          <li><span class="logo" data-logo><img src="https://cdn.jsdelivr.net/npm/devicon@2.17.0/icons/git/git-original.svg" alt="" width="32" height="32" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></span>Git</li>
+          <li><span class="logo" data-logo><img src="https://cdn.jsdelivr.net/npm/devicon@2.17.0/icons/github/github-original.svg" alt="" width="32" height="32" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></span>GitHub</li>
+          <li><span class="logo" data-logo><img src="https://cdn.jsdelivr.net/npm/@fabric-msft/svg-icons@8.4.0/svg/data_agent_48_item.svg" alt="" width="32" height="32" loading="lazy" onerror="this.parentNode.classList.add('is-missing')"></span>Fabric Data Agent</li>
+        </ul>
+        <p class="also"><strong>Also:</strong> DAX, Direct Lake, Logic Apps, Key Vault, Microsoft Entra ID (PIM, RBAC, Conditional Access), Intune, Defender, Microsoft Graph and Fabric REST APIs, Copilot Studio.</p>
       </div>
     </div>
   </section>
@@ -641,8 +870,8 @@
     <a class="email" data-mail href="#contact"><span data-email-text>mmahtabuzzaman at gmail dot com</span></a>
     <div class="actions">
       <button class="btn btn-primary js-only" type="button" data-copy-email>Copy email address</button>
-      <a class="btn" href="https://www.linkedin.com/in/mahtabuzzaman">LinkedIn</a>
-      <a class="btn" href="https://github.com/mahtabuzzaman">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/mahtabuzzaman"><img class="btn-logo" src="https://cdn.jsdelivr.net/npm/devicon@2.17.0/icons/linkedin/linkedin-original.svg" alt="" width="18" height="18">LinkedIn</a>
+      <a class="btn" href="https://github.com/mahtabuzzaman"><img class="btn-logo invert-dark" src="https://cdn.jsdelivr.net/npm/devicon@2.17.0/icons/github/github-original.svg" alt="" width="18" height="18">GitHub</a>
     </div>
     <p class="status" data-copy-status aria-live="polite"></p>
   </section>
@@ -652,12 +881,17 @@
   <div class="wrap">
     <span>© <span data-year>2026</span> Shah Md. Mahtabuzzaman</span>
     <a href="#top">Back to top</a>
+    <p class="fineprint">Product names and logos belong to their owners and are shown only to name the tools I use.</p>
   </div>
 </footer>
 
 <script>
 (function () {
   var root = document.documentElement;
+  var calm = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+  /* Links still carrying a placeholder stay hidden until you fill them in. */
+  document.querySelectorAll('a[href*="your-"]').forEach(function (a) { a.hidden = true; });
 
   /* Email: assembled here so the address isn't sitting in the HTML for scrapers. */
   var email = ['mmahtabuzzaman', 'gmail.com'].join('@');
@@ -700,27 +934,62 @@
     paintTheme();
   }
 
-  /* Pipeline: each stage toggles its description; pressing the active one returns to the overview. */
-  var flow = document.querySelector('[data-flow]');
-  if (flow) {
-    var buttons = Array.prototype.slice.call(flow.querySelectorAll('[data-stage]'));
-    var details = Array.prototype.slice.call(flow.querySelectorAll('[data-detail]'));
-    var show = function (key) {
-      buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-stage') === key)); });
-      details.forEach(function (d) { d.classList.toggle('is-on', d.getAttribute('data-detail') === key); });
-    };
-    var detailBox = document.getElementById('flow-detail');
-    var calm = window.matchMedia('(prefers-reduced-motion: reduce)');
-    buttons.forEach(function (b) {
+  /* "What I do" tabs (arrow keys, Home and End move between them). */
+  var what = document.getElementById('what');
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('[role="tab"]'));
+  var panels = tabs.map(function (t) { return document.getElementById(t.getAttribute('aria-controls')); });
+  function selectTab(i, moveFocus) {
+    tabs.forEach(function (t, j) {
+      var on = j === i;
+      t.setAttribute('aria-selected', String(on));
+      t.tabIndex = on ? 0 : -1;
+      panels[j].classList.toggle('is-on', on);
+    });
+    if (moveFocus) tabs[i].focus();
+  }
+  function bringIntoView(el) {
+    var r = el.getBoundingClientRect();
+    if (r.top > window.innerHeight - 120) el.scrollIntoView({ block: 'nearest', behavior: calm.matches ? 'auto' : 'smooth' });
+  }
+  tabs.forEach(function (t, i) {
+    t.addEventListener('click', function () { selectTab(i); bringIntoView(panels[i]); });
+    t.addEventListener('keydown', function (e) {
+      var n = tabs.length, next = null;
+      if (e.key === 'ArrowRight' || e.key === 'ArrowDown') next = (i + 1) % n;
+      else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') next = (i - 1 + n) % n;
+      else if (e.key === 'Home') next = 0;
+      else if (e.key === 'End') next = n - 1;
+      if (next !== null) { e.preventDefault(); selectTab(next, true); }
+    });
+  });
+  if (tabs.length) selectTab(0);
+
+  /* Tags on the work items jump to the matching area. */
+  document.querySelectorAll('[data-goto]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      var i = tabs.findIndex(function (t) { return t.id === 'tab-' + a.getAttribute('data-goto'); });
+      if (i < 0) return;
+      e.preventDefault();
+      selectTab(i);
+      what.scrollIntoView({ block: 'start', behavior: calm.matches ? 'auto' : 'smooth' });
+      tabs[i].focus({ preventScroll: true });
+    });
+  });
+
+  /* Pipeline stages: press one to read what happens there; press it again to clear. */
+  var stageBtns = Array.prototype.slice.call(document.querySelectorAll('[data-stage]'));
+  var caption = document.querySelector('[data-stage-caption]');
+  if (caption) {
+    var restingCaption = caption.textContent;
+    stageBtns.forEach(function (b) {
       b.addEventListener('click', function () {
-        show(b.getAttribute('aria-pressed') === 'true' ? 'overview' : b.getAttribute('data-stage'));
-        var r = detailBox.getBoundingClientRect();
-        if (r.top > window.innerHeight - 120) detailBox.scrollIntoView({ block: 'nearest', behavior: calm.matches ? 'auto' : 'smooth' });
+        var on = b.getAttribute('aria-pressed') !== 'true';
+        stageBtns.forEach(function (x) { x.setAttribute('aria-pressed', String(on && x === b)); });
+        caption.textContent = on ? b.getAttribute('data-caption') : restingCaption;
       });
     });
-    show('overview');
-    requestAnimationFrame(function () { requestAnimationFrame(function () { flow.classList.add('is-live'); }); });
   }
+  if (what) requestAnimationFrame(function () { requestAnimationFrame(function () { what.classList.add('is-live'); }); });
 
   /* Local time in Dhaka. */
   var clock = document.querySelector('[data-dhaka-time]');
