@@ -200,6 +200,19 @@
   }
   .hero .actions { margin-top: 2rem; }
 
+  /* Game feature, right under the hero buttons */
+  .game {
+    display: grid; grid-template-columns: 13rem minmax(0, 1fr) auto; align-items: center; gap: 1rem 1.5rem;
+    margin-top: 2.25rem; padding: 0.75rem 1.5rem 0.75rem 0.75rem;
+    background: var(--panel); border: 1px solid var(--line); border-radius: 20px;
+    color: inherit; text-decoration: none;
+    transition: border-color 0.15s;
+  }
+  .game:focus-visible { border-radius: 20px; }
+  .game-shot { display: block; width: 100%; height: auto; aspect-ratio: 1200 / 627; border-radius: 12px; background: var(--paper); }
+  .game-title { display: block; font-size: 1.2rem; font-weight: 720; font-stretch: 112%; line-height: 1.25; }
+  .game-desc { display: block; margin-top: 0.3rem; max-width: 52ch; color: var(--ink-2); font-size: 0.98rem; line-height: 1.5; }
+
   /* What I do: one panel, six areas */
   .what {
     margin-top: clamp(3rem, 6vw, 4.5rem);
@@ -415,6 +428,8 @@
     .stage[aria-pressed="true"]:hover .node { scale: 1.35; }
     .tag:hover { color: var(--ink); border-color: var(--ink-2); }
     .org-name a:hover { text-decoration-color: currentColor; }
+    .game:hover { border-color: var(--ink-2); }
+    .game:hover .game-cta { background: color-mix(in srgb, var(--ink) 86%, var(--paper)); }
   }
 
   @media (max-width: 1000px) {
@@ -434,6 +449,9 @@
     .packet i { animation-name: refine-y; }
     .roles { margin-left: 1.75rem; }
     .roles li { grid-template-columns: 1fr; gap: 0.3rem; padding-left: 1.5rem; }
+    .game { grid-template-columns: 1fr; padding: 0.75rem 0.75rem 1.1rem; }
+    .game-copy, .game-cta { margin-inline: 0.35rem; }
+    .game-cta { justify-self: start; }
   }
   @keyframes travel-y { from { transform: translateY(0); } to { transform: translateY(100%); } }
   @keyframes refine-y {
@@ -457,7 +475,7 @@
     .js .what .node { opacity: 1 !important; animation: none !important; }
     .js .what .track::before { transform: none !important; transition: none !important; }
     .js .panel.is-on { animation: none; }
-    .node, .btn, .tab, .site-head { transition: none; }
+    .node, .btn, .tab, .site-head, .game { transition: none; }
   }
 </style>
 </head>
@@ -500,6 +518,15 @@
       <a class="btn" href="https://www.linkedin.com/in/mahtabuzzaman"><img class="btn-logo" src="https://cdn.jsdelivr.net/npm/devicon@2.17.0/icons/linkedin/linkedin-original.svg" alt="" width="18" height="18">View LinkedIn</a>
       <a class="btn" href="resume.pdf" download>Download résumé</a>
     </div>
+
+    <a class="game" href="games/pipeline-patrol.html">
+      <img class="game-shot" src="games/pipeline-patrol.png" alt="" width="1200" height="627" decoding="async">
+      <span class="game-copy">
+        <span class="game-title">Play Pipeline Patrol</span>
+        <span class="game-desc">A small arcade game I built about data quality. Shoot the bad rows before they reach the Gold layer, and tap any row to learn what it means in a real pipeline.</span>
+      </span>
+      <span class="btn btn-primary game-cta" aria-hidden="true">Play the game</span>
+    </a>
 
     <section class="what" id="what" aria-labelledby="what-title">
       <h2 class="what-title" id="what-title">What I do</h2>
